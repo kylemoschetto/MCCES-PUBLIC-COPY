@@ -1,0 +1,53 @@
+{
+  "name": "cbm",
+  "version": "1.0.0",
+  "description": "Curriculum Builder and Maintainer - AI-powered CLI for USMC curriculum development",
+  "main": "dist/index.js",
+  "bin": {
+    "cbm": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "lint": "eslint \"src/**/*.ts\" \"scripts/**/*.ts\"",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run typecheck && npm run lint"
+  },
+  "keywords": [
+    "curriculum",
+    "usmc",
+    "education",
+    "ai",
+    "cli"
+  ],
+  "author": "Kyle Moschetto",
+  "license": "MIT",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.71.2",
+    "@google/generative-ai": "^0.24.1",
+    "chalk": "^4.1.2",
+    "commander": "^12.1.0",
+    "docx": "^8.5.0",
+    "dotenv": "^17.2.3",
+    "inquirer": "^8.2.6",
+    "openai": "^4.77.0",
+    "pdf-parse": "^1.1.1"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.7",
+    "@types/node": "^22.10.5",
+    "@types/pdf-parse": "^1.1.4",
+    "@typescript-eslint/eslint-plugin": "^8.20.0",
+    "@typescript-eslint/parser": "^8.20.0",
+    "eslint": "^9.18.0",
+    "prettier": "^3.4.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  }
+}

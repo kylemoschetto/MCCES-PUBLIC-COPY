@@ -1,0 +1,1776 @@
+[
+  {
+    "id": "TLO-001",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0001",
+    "condition": "Given a list of tactical frequencies and MCRP 3-40.3C.",
+    "behavior": "Classify each frequency into the correct military radio frequency band (HF, VHF, or UHF).",
+    "standard": "Without error per Figure 1-1 of MCRP 3-40.3C.",
+    "cognitiveLevel": 2,
+    "verb": "Classify",
+    "justification": "The Marine must demonstrate comprehension of the frequency spectrum by organizing specific frequencies into their respective doctrinal categories. This requires understanding the relationships between frequency ranges rather than simple recall.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-3, Figure 1-1",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-002",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0002",
+    "condition": "Given a specific operating frequency, the constant for the speed of light, and MCRP 3-40.3C.",
+    "behavior": "Calculate the wavelength (λ) in meters.",
+    "standard": "With 100% accuracy to determine antenna length requirements per the wavelength formula (λ = v/f).",
+    "cognitiveLevel": 3,
+    "verb": "Calculate",
+    "justification": "This task requires the application of a mathematical formula to a specific variable (frequency) to produce a technical result necessary for antenna construction.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-2",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-003",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0003",
+    "condition": "Given a tactical radio system and MCRP 3-40.3C.",
+    "behavior": "Identify the characteristics of radio wave propagation.",
+    "standard": "To ensure optimal antenna placement based on wave components and interference factors per MCRP 3-40.3C.",
+    "cognitiveLevel": 1,
+    "verb": "Identify",
+    "justification": "The objective requires the Marine to recognize and recall specific terminology and physical properties of radio waves (crest, trough, ground/sky waves) which serves as the foundational knowledge for signal path analysis.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-2, 1-23",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-004",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0004",
+    "condition": "Given a frequency value and MCRP 3-40.3C.",
+    "behavior": "Calculate the conversion of frequency values between Hertz (Hz), Kilohertz (kHz), Megahertz (MHz), and Gigahertz (GHz).",
+    "standard": "Without error, ensuring the correct decimal placement and unit suffix.",
+    "cognitiveLevel": 3,
+    "verb": "Calculate",
+    "justification": "The Marine must apply mathematical conversion factors (powers of 1,000) to translate data between different units of measure used in radio programming and antenna theory.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-3",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "Standard should include measurable criteria (time limits, accuracy percentages) or reference authoritative sources (per MCRP..., IAW TM...)."
+      ]
+    }
+  },
+  {
+    "id": "TLO-005",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0005",
+    "condition": "Given a target frequency, a calculator, and MCRP 3-40.3C.",
+    "behavior": "Calculate the physical length of a half-wave or quarter-wave antenna.",
+    "standard": "To within 1 percent of the mathematical requirement to ensure resonance at the assigned frequency per the formulas in MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Calculate",
+    "justification": "This is a direct application of antenna theory constants (468 or 234) to a specific frequency to determine the physical dimensions of field-expedient or cut-to-length antennas.",
+    "sourceRef": "MCRP 3-40.3C, Section III, Page 2-24",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-006",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0006",
+    "condition": "Given a radio, transmission line, antenna wire, insulators, support structures, and a target frequency.",
+    "behavior": "Construct a field-expedient center-fed doublet antenna.",
+    "standard": "Such that a radio link is established with a distant station at the assigned frequency per MCRP 3-40.3C.",
+    "cognitiveLevel": 6,
+    "verb": "Construct",
+    "justification": "The task requires the Marine to synthesize multiple components (wire, insulators, supports) into a new functional system based on calculated specifications, which aligns with the 'Create' level of Bloom's Taxonomy.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 6, Page 6-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-007",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0007",
+    "condition": "Given an antenna system, ground rods, counterpoise wire, and hand tools.",
+    "behavior": "Implement an antenna grounding system.",
+    "standard": "To improve radiation efficiency and ensure operator safety per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Implement",
+    "justification": "This is a procedural task requiring the application of standard installation techniques in a field environment to meet safety and performance requirements.",
+    "sourceRef": "MCRP 3-40.3C, Section II, Page 2-19",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-008",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0008",
+    "condition": "Given an erected directional antenna, a compass, and the location of a distant station.",
+    "behavior": "Execute antenna orientation for directionality.",
+    "standard": "On the correct azimuth to maximize signal gain and achieve a reliable radio link per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Execute",
+    "justification": "The Marine must apply mathematical conversions and physical alignment procedures to achieve a specific operational outcome, which is a direct application of learned skills.",
+    "sourceRef": "MCRP 3-40.3C, Section IV, Page 2-26",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-009",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0009",
+    "condition": "Given a damaged wire antenna system and a field repair kit.",
+    "behavior": "Troubleshoot a damaged wire antenna system.",
+    "standard": "Restoring electrical continuity and structural integrity to enable communications per MCRP 3-40.3C.",
+    "cognitiveLevel": 4,
+    "verb": "Troubleshoot",
+    "justification": "The task requires the Marine to analyze the system to identify the point of failure before applying a technical solution, requiring diagnostic thinking.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 6, Page 6-2",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-010",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0010",
+    "condition": "Given an operating frequency, a calculator, and writing materials.",
+    "behavior": "Calculate physical antenna length.",
+    "standard": "To within 1% accuracy using the formulas provided in MCRP 6-22D.",
+    "cognitiveLevel": 3,
+    "verb": "Calculate",
+    "justification": "This requires the application of specific mathematical formulas to a given variable (frequency) to produce a required technical value.",
+    "sourceRef": "MCRP 6-22D, Chapter 2, Section III",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-011",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0011",
+    "condition": "Given a tactical mission, a frequency band (HF, VHF, or UHF), and a designated area of operations.",
+    "behavior": "analyze antenna site selection",
+    "standard": "to optimize signal propagation and minimize interference based on the technical and tactical considerations in MCRP 6-22D.",
+    "cognitiveLevel": 4,
+    "verb": "Analyze",
+    "justification": "Selecting a site requires the Marine to break down multiple variables including terrain elevation, manmade noise, and ground conductivity to determine their relationship to signal propagation. This exceeds simple application and requires analysis of the environment.",
+    "sourceRef": "MCRP 6-22D, Chapter 8, Location Selection Considerations",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-012",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0012",
+    "condition": "Given a distant station location, an antenna, and a compass.",
+    "behavior": "demonstrate antenna orientation",
+    "standard": "to achieve maximum signal gain toward the distant station per MCRP 6-22D.",
+    "cognitiveLevel": 3,
+    "verb": "Demonstrate",
+    "justification": "This is a procedural task where the Marine applies known technical data (radiation patterns) and tools (compass) to execute a specific configuration. It is a direct application of technical knowledge to a physical task.",
+    "sourceRef": "MCRP 6-22D, Chapter 2, Section IV",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-013",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0013",
+    "condition": "Given a radio set, an antenna, and a ground/counterpoise kit or field-expedient wire.",
+    "behavior": "perform the construction of an antenna ground system",
+    "standard": "to improve antenna resonance and efficiency in accordance with MCRP 6-22D.",
+    "cognitiveLevel": 3,
+    "verb": "Perform",
+    "justification": "The construction of a ground system is a hands-on, performance-based task. The Marine must execute the steps of laying out radials and securing connections according to established technical standards.",
+    "sourceRef": "MCRP 6-22D, Chapter 2, Section II",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-014",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0014",
+    "condition": "Given multiple radio systems, various antenna types, and a designated Command Post (CP) location.",
+    "behavior": "plan an antenna farm layout",
+    "standard": "to minimize co-site interference and maximize communication effectiveness per the layout principles in MCRP 6-22D.",
+    "cognitiveLevel": 6,
+    "verb": "Plan",
+    "justification": "Establishing an antenna farm requires the Marine to synthesize various requirements—separation distances, frequency bands, and polarization—to create a new, functional layout that supports the entire Command Post's communication architecture.",
+    "sourceRef": "MCRP 6-22D, Chapter 8, Antenna Farm Layout Principles",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-015",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0015",
+    "condition": "Given a requirement to configure a radio system and a specific frequency expressed in Hertz (Hz), Kilohertz (kHz), Megahertz (MHz), or Gigahertz (GHz).",
+    "behavior": "calculate frequency unit conversions",
+    "standard": "with 100% accuracy to ensure proper equipment programming per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Calculate",
+    "justification": "Frequency conversion is a mathematical application of a known formula or conversion factor. The Marine is applying a rule to a specific set of data to reach a correct technical value.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-3",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-016",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0016",
+    "condition": "Given an assigned operating frequency, a specific antenna type (half-wave or quarter-wave), and MCRP 3-40.3C.",
+    "behavior": "Calculate the physical length of the antenna required for resonance at the assigned frequency.",
+    "standard": "Achieving a result within +/- 1 inch of the mathematical requirement per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Calculate",
+    "justification": "The task requires the application of specific mathematical formulas to a given set of variables (frequency and antenna type) to produce a measurable result. This aligns with Level 3 (Apply) as it involves using information in a concrete situation.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 2, Section III",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-017",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0017",
+    "condition": "Given a tactical radio, a directional antenna, a lensatic compass, and the location of a distant station.",
+    "behavior": "Execute the orientation of the antenna on the correct azimuth.",
+    "standard": "To achieve maximum signal strength and establish a reliable communication link per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Execute",
+    "justification": "Orienting an antenna is a procedural task that requires the Marine to apply knowledge of azimuths and radiation patterns in a field environment. Level 3 (Apply) is appropriate for the execution of technical procedures.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 2, Section IV",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-018",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0018",
+    "condition": "Given an antenna system, a grounding kit or field-expedient materials, and a designated site.",
+    "behavior": "Implement a ground or counterpoise system.",
+    "standard": "Ensuring antenna resonance and operator safety per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Implement",
+    "justification": "The construction of a grounding system involves following established safety and technical procedures to achieve a functional end-state. Level 3 (Apply) is the standard for implementing technical solutions in the field.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 2, Section II",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-019",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0019",
+    "condition": "Given an OE-254 antenna kit, a designated site, and a requirement to establish VHF communications.",
+    "behavior": "Perform the assembly and erection of the OE-254 antenna.",
+    "standard": "According to technical specifications, providing maximum gain and directivity for the assigned frequency, per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Perform",
+    "justification": "Assembly and erection of standard equipment is a fundamental procedural task. Level 3 (Apply) is selected as it requires the Marine to demonstrate the correct sequence of actions to meet a technical standard.",
+    "sourceRef": "MCRP 3-40.3C, Page 5-10",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-020",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0020",
+    "condition": "Given a mission requirement, a specific frequency range (VHF/UHF), and a tactical environment.",
+    "behavior": "Determine the appropriate antenna type to maximize signal strength and minimize interference.",
+    "standard": "Based on the characteristics of the operating area and technical capabilities of the equipment per MCRP 3-40.3C.",
+    "cognitiveLevel": 5,
+    "verb": "Determine",
+    "justification": "This task requires the Marine to evaluate environmental variables (vegetation, multipath, noise) and make a judgment call on which antenna system is most effective. Level 5 (Evaluate) is appropriate for making decisions based on criteria and standards.",
+    "sourceRef": "MCRP 3-40.3C, Pages 5-1 through 5-12",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-021",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0021",
+    "condition": "Given an HF radio set, a distant station, and ionospheric data (MUF/LUF).",
+    "behavior": "execute HF sky wave communications",
+    "standard": "by selecting a frequency between the Maximum Usable Frequency (MUF) and Lowest Useful Frequency (LUF) and adjusting the antenna for the correct angle of incidence to establish a reliable communication link per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Execute",
+    "justification": "Establishing sky wave communications requires the Marine to apply ionospheric data and technical procedures to a physical radio set to achieve a specific outcome. This is a direct application of knowledge to a task.",
+    "sourceRef": "MCRP 3-40.3C, Pages 1-14 through 1-17",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-022",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0022",
+    "condition": "Given a horizontal half-wave antenna, a desired signal source, and an identified interfering station.",
+    "behavior": "demonstrate directional antenna orientation to mitigate interference",
+    "standard": "by placing the interfering source in the antenna's null and the desired source in the antenna's broadside to maximize the signal-to-noise ratio per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Demonstrate",
+    "justification": "The Marine must physically manipulate the antenna based on the spatial relationship between signal sources. This requires the application of antenna theory to a real-world scenario.",
+    "sourceRef": "MCRP 3-40.3C, Page 2-11",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-023",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0023",
+    "condition": "Given a specific operating frequency, a calculator, and reference material.",
+    "behavior": "calculate antenna length",
+    "standard": "to within one inch of the mathematical requirement based on the formula for a half-wave or quarter-wave antenna per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Calculate",
+    "justification": "Calculation is a Level 3 cognitive task involving the application of mathematical formulas (468/f) to a specific technical requirement.",
+    "sourceRef": "MCRP 3-40.3C, Section III, Page 2-24",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-024",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0024",
+    "condition": "Given a radio set, antenna, grounding rod, and counterpoise or ground screen materials.",
+    "behavior": "implement an antenna grounding system",
+    "standard": "to establish a low-resistance path to earth to improve radiation efficiency and ensure operator safety per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Implement",
+    "justification": "Constructing a grounding system requires the Marine to follow a technical procedure and apply it to the physical environment (soil conditions) to meet safety and efficiency standards.",
+    "sourceRef": "MCRP 3-40.3C, Section II, Page 2-19",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-025",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0025",
+    "condition": "Given a directional antenna, a compass, and the grid coordinates of a distant station.",
+    "behavior": "apply antenna orientation techniques for maximum signal strength",
+    "standard": "by aligning the antenna's major radiation lobe with the distant station's azimuth within +/- 5 degrees per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Apply",
+    "justification": "This task requires the application of land navigation skills (azimuth conversion) and signal theory to the physical placement of equipment.",
+    "sourceRef": "MCRP 3-40.3C, Section IV, Page 2-26",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-026",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0026",
+    "condition": "Given an AS-2259/GR antenna kit and a designated site.",
+    "behavior": "Perform the assembly and erection of an AS-2259/GR antenna.",
+    "standard": "To support Near Vertical Incidence Skywave (NVIS) communications, ensuring the VSWR is within acceptable limits per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Perform",
+    "justification": "This is a procedural, hands-on task requiring the Marine to apply technical steps to achieve a physical result in a field environment.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 4, Page 4-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-027",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0027",
+    "condition": "Given an OE-254 antenna kit and a designated site.",
+    "behavior": "Perform the assembly and erection of an OE-254 antenna.",
+    "standard": "To support VHF line-of-sight communications, ensuring guy ropes are secured at 120-degree intervals per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Perform",
+    "justification": "Physical assembly and erection of equipment is a direct application of technical knowledge and manual skills.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 5, Page 5-10",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-028",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0028",
+    "condition": "Given a mission, a list of communication nets, and a tactical area of responsibility.",
+    "behavior": "Plan the layout of an antenna farm.",
+    "standard": "To minimize mutual interference and maximize signal propagation while meeting tactical concealment and security requirements per MCRP 3-40.3C.",
+    "cognitiveLevel": 6,
+    "verb": "Plan",
+    "justification": "Siting requires the synthesis of terrain analysis, frequency management, and tactical requirements to create a new layout or configuration.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 8, Page 8-2",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-029",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0029",
+    "condition": "Given a specific operating frequency, a calculator, and writing materials.",
+    "behavior": "Calculate the physical length of a half-wave dipole or quarter-wave vertical antenna.",
+    "standard": "To within +/- 1 inch of the mathematical requirement based on the formula provided in MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Calculate",
+    "justification": "Mathematical computation using a provided formula is a standard application of technical knowledge to a specific problem.",
+    "sourceRef": "MCRP 3-40.3C, Section III, Page 2-24",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-030",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0030",
+    "condition": "Given a radio, transmission line (coaxial cable), antenna wire, insulators, and a calculated frequency.",
+    "behavior": "Demonstrate the construction and employment of a half-wave dipole antenna.",
+    "standard": "Ensuring the antenna is resonant at the assigned frequency and capable of establishing communications with a distant station per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Demonstrate",
+    "justification": "This task requires the Marine to apply calculations and assembly techniques to create a functional field-expedient communication solution.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 4, Page 4-14",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-031",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0031",
+    "condition": "Given an AS-2259/GR antenna kit, an HF radio, and a designated site.",
+    "behavior": "Perform the assembly and erection of the AS-2259/GR antenna.",
+    "standard": "To support Near Vertical Incidence Skywave (NVIS) communications as per the technical manual and MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Perform",
+    "justification": "This is a procedural, hands-on task requiring the Marine to apply technical steps to achieve a physical outcome. Level 3 (Apply) is the appropriate level for equipment employment.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 4, Page 4-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-032",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0032",
+    "condition": "Given an OE-254 antenna kit, a VHF radio, and a designated site.",
+    "behavior": "Demonstrate the assembly and erection of the OE-254 antenna.",
+    "standard": "To its full height (30 feet) to establish VHF line-of-sight communications per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Demonstrate",
+    "justification": "The task requires the execution of a specific sequence of physical actions to deploy a standard piece of equipment. Level 3 (Apply) matches the requirement for procedural implementation.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 5, Page 5-10",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-033",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0033",
+    "condition": "Given a vertical whip antenna, ground stakes, and copper wire (counterpoise).",
+    "behavior": "Implement an antenna ground system.",
+    "standard": "By installing a ground screen or counterpoise to improve radiation efficiency per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Implement",
+    "justification": "The Marine must apply knowledge of soil conductivity and wavelength to physically install a grounding solution. This is a direct application of technical principles.",
+    "sourceRef": "MCRP 3-40.3C, Section II, Page 2-19",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-034",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0034",
+    "condition": "Given an erected directional antenna and a distant station's location.",
+    "behavior": "Apply orientation techniques to a directional antenna.",
+    "standard": "Aligning the major lobe toward the receiving station to achieve maximum gain per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Apply",
+    "justification": "This task requires using tools (compass/map) and technical data (radiation patterns) to perform a physical adjustment. Level 3 is appropriate for using information in a specific situation.",
+    "sourceRef": "MCRP 3-40.3C, Section IV, Page 2-26",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-035",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0035",
+    "condition": "Given a mission requirement, a specific frequency, a distance to the distant station, and MCRP 6-22D.",
+    "behavior": "Determine the appropriate HF antenna type.",
+    "standard": "To optimize gain and propagation (Groundwave, Skywave, or NVIS) for the required distance and frequency in accordance with MCRP 6-22D Chapter 4.",
+    "cognitiveLevel": 5,
+    "verb": "Determine",
+    "justification": "The Marine must evaluate multiple variables (distance, terrain, frequency, and propagation mode) and make a judgment on which antenna best meets the mission criteria. This requires evaluation-level thinking.",
+    "sourceRef": "MCRP 6-22D, Page 4-2 to 4-8",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-036",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0036",
+    "condition": "Given an AS-2259/GR antenna kit, an HF radio set, and MCRP 6-22D.",
+    "behavior": "Perform the installation of an AS-2259/GR antenna.",
+    "standard": "To provide Near Vertical Incidence Skywave (NVIS) communications, ensuring all connections are secure and the mast is stable, per MCRP 6-22D Section 4-9.",
+    "cognitiveLevel": 3,
+    "verb": "Perform",
+    "justification": "Installation of a standardized antenna kit is a procedural, hands-on task that requires the application of technical steps in a field environment to achieve a specific operational outcome.",
+    "sourceRef": "MCRP 6-22D, Page 4-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-037",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0037",
+    "condition": "Given an OE-254 antenna kit, a VHF radio set, and MCRP 6-22D.",
+    "behavior": "Perform the installation of an OE-254 antenna.",
+    "standard": "To provide VHF line-of-sight communications, ensuring the mast is vertical and guy lines are tensioned, per MCRP 6-22D Section 5-10.",
+    "cognitiveLevel": 3,
+    "verb": "Perform",
+    "justification": "This is a psychomotor task requiring the application of specific assembly and erection procedures to meet technical standards.",
+    "sourceRef": "MCRP 6-22D, Page 5-10",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-038",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0038",
+    "condition": "Given a tactical scenario, multiple radio systems (HF, VHF, UHF), and MCRP 6-22D.",
+    "behavior": "Plan an antenna farm layout.",
+    "standard": "To minimize interference and maximize signal effectiveness based on tactical and technical considerations in MCRP 6-22D Chapter 8.",
+    "cognitiveLevel": 6,
+    "verb": "Plan",
+    "justification": "Siting an antenna farm requires the synthesis of tactical requirements, terrain analysis, and electromagnetic interference principles to create a unique spatial configuration.",
+    "sourceRef": "MCRP 6-22D, Page 8-2 to 8-16",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-039",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0039",
+    "condition": "Given a frequency, wire, insulators, a transmission line, and MCRP 6-22D.",
+    "behavior": "Construct a half-wave dipole antenna.",
+    "standard": "Ensuring the antenna supports HF communications for the assigned frequency per MCRP 6-22D Section 4-14.",
+    "cognitiveLevel": 6,
+    "verb": "Construct",
+    "justification": "Construction involves the synthesis of raw materials and mathematical calculations to produce a functional communication tool tailored to a specific frequency.",
+    "sourceRef": "MCRP 6-22D, Page 4-14",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-040",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0040",
+    "condition": "Given a specific operating frequency and a requirement to construct a wire antenna.",
+    "behavior": "Calculate the physical length of antenna elements.",
+    "standard": "To within 1% of the theoretical requirement based on the formula provided in MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Calculate",
+    "justification": "Calculation is the direct application of a mathematical formula to a specific problem set to determine a precise value.",
+    "sourceRef": "MCRP 3-40.3C, Section III, Page 2-24",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-041",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0041",
+    "condition": "Given an AS-2259/GR antenna kit, a designated site, and a requirement to establish Near Vertical Incidence Skywave (NVIS) communications.",
+    "behavior": "Demonstrate the installation of an AS-2259/GR antenna.",
+    "standard": "The antenna must be assembled, erected to be structurally sound, and provide a signal capable of supporting communications in accordance with MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Demonstrate",
+    "justification": "This task requires the application of technical procedures to physically assemble and deploy equipment. Level 3 (Apply) is the appropriate cognitive level for procedural, hands-on tasks where the Marine must execute a sequence of steps to achieve a specific outcome.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 4, Page 4-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-042",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0042",
+    "condition": "Given an OE-254 antenna kit and a requirement to provide VHF line-of-sight communications.",
+    "behavior": "Demonstrate the installation of an OE-254 antenna.",
+    "standard": "The antenna must be erected to its full height and secured to withstand environmental conditions while maintaining a clear line of sight to the receiving station per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Demonstrate",
+    "justification": "Installation of standard antenna kits is a procedural application of technical manual instructions. Level 3 (Apply) reflects the requirement to perform the physical task in a field environment.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 5, Page 5-10",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-043",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0043",
+    "condition": "Given field wire (WD-1/TT), insulators, a radio set, and a requirement to establish communications when standard antennas are unavailable.",
+    "behavior": "Construct a field-expedient wire antenna.",
+    "standard": "The antenna must achieve resonance at the assigned frequency and enable communication (such as a Half-Wave Dipole or Inverted Vee) in accordance with MCRP 3-40.3C.",
+    "cognitiveLevel": 6,
+    "verb": "Construct",
+    "justification": "This task requires the Marine to synthesize knowledge of radio frequency theory, perform mathematical calculations for wire length, and use non-standard materials to create a functional system. Level 6 (Create) is required because the Marine is producing a new artifact from raw components.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 6, Page 6-7",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-044",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0044",
+    "condition": "Given a damaged antenna (whip or wire) and a field repair kit.",
+    "behavior": "Troubleshoot a damaged antenna system to restore functionality.",
+    "standard": "Electrical continuity and structural integrity must be restored to allow for immediate resumption of communications per MCRP 3-40.3C.",
+    "cognitiveLevel": 4,
+    "verb": "Troubleshoot",
+    "justification": "Repairing damaged equipment requires the Marine to first analyze the system to identify the point of failure before applying a fix. Level 4 (Analyze) is appropriate for diagnostic tasks involving system restoration.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 6, Page 6-1",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-045",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0045",
+    "condition": "Given a radio system requiring a ground, a pipe or conduit to serve as a ground rod, ground wire, ground clamp, cleaning materials (sandpaper or scraper), and tape.",
+    "behavior": "Demonstrate the fabrication of a field-expedient ground connection.",
+    "standard": "The connection must be low-resistance, support radio wave radiation, prevent oxidation, and be installed without contaminating nearby drinking water supplies per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Demonstrate",
+    "justification": "While this involves fabrication, it follows a specific technical procedure to ensure electrical safety and signal propagation. Level 3 (Apply) is the correct level for implementing these technical standards using available materials.",
+    "sourceRef": "MCRP 3-40.3C, Page 2-22",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-046",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0046",
+    "condition": "Given an antenna system, wire, and insulators, in an environment where a direct ground connection is impractical due to high soil resistance.",
+    "behavior": "Perform the installation of an antenna counterpoise.",
+    "standard": "Ensuring the counterpoise is at least equal to or larger than the antenna size, insulated from the ground, and connected to the radio system ground terminal per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Perform",
+    "justification": "Installation of a counterpoise is a procedural, hands-on task that requires the Marine to apply technical steps in a field environment to achieve a specific physical result.",
+    "sourceRef": "MCRP 3-40.3C, Page 2-22, 2-23",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-047",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0047",
+    "condition": "Given a communication mission, a specified frequency band (LF, MF, HF, VHF, or UHF), and tactical antennas.",
+    "behavior": "Apply antenna polarization requirements.",
+    "standard": "To optimize signal strength and radiation patterns based on frequency and transmission type (ground wave vs. sky wave) per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Apply",
+    "justification": "This task requires the Marine to use knowledge of wave propagation and frequency characteristics to make a tactical decision (selecting the correct polarization) for a specific mission scenario.",
+    "sourceRef": "MCRP 3-40.3C, Page 2-8, 2-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-048",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0048",
+    "condition": "Given a specific operating frequency, a requirement for a half-wave or quarter-wave antenna, and reference material.",
+    "behavior": "Calculate the physical length of the antenna wire.",
+    "standard": "Ensuring resonance at the assigned frequency by applying the standard formula (468/frequency for half-wave) and accounting for velocity factors per MCRP 3-40.3C Section III.",
+    "cognitiveLevel": 3,
+    "verb": "Calculate",
+    "justification": "Calculation is a direct application of mathematical formulas to technical requirements, falling under the Apply level of Bloom's Taxonomy.",
+    "sourceRef": "MCRP 3-40.3C, Page 2-24",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-049",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0049",
+    "condition": "Given a tactical radio, an antenna system, and the location of a distant station.",
+    "behavior": "Demonstrate antenna orientation for maximum signal strength.",
+    "standard": "Achieving the highest possible signal-to-noise (S/N) ratio and establishing a reliable communications circuit by aligning the radiation pattern and adjusting take-off angles per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Demonstrate",
+    "justification": "Orientation is a performance-based task where the Marine must execute physical adjustments to equipment based on azimuth and propagation variables.",
+    "sourceRef": "MCRP 3-40.3C, Page 2-26",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-050",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0050",
+    "condition": "Given a radio set, an antenna, and grounding materials (ground stakes, wire, or counterpoise kit).",
+    "behavior": "Perform the installation of an antenna grounding system.",
+    "standard": "Improving antenna efficiency and radiation characteristics by selecting the appropriate grounding method and ensuring low resistance to Earth per MCRP 3-40.3C Section II.",
+    "cognitiveLevel": 3,
+    "verb": "Perform",
+    "justification": "This is a procedural task involving the physical assessment of soil and the installation of hardware to meet technical performance standards.",
+    "sourceRef": "MCRP 3-40.3C, Page 2-19",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-051",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0051",
+    "condition": "Given a mission requirement, distance to the distant station, and MCRP 3-40.3C Table 1-1 (Frequency Range Characteristics).",
+    "behavior": "Analyze frequency bands and propagation modes for a communication path.",
+    "standard": "To select the appropriate frequency (HF, VHF, or UHF) and propagation mode (Ground Wave or Sky Wave) that maintains a continuous link based on distance and terrain obstructions per MCRP 3-40.3C.",
+    "cognitiveLevel": 4,
+    "verb": "Analyze",
+    "justification": "The task requires the Marine to evaluate multiple variables (distance, terrain, and frequency characteristics) and differentiate between propagation modes to determine the optimal solution for a specific mission requirement.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-4",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-052",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0052",
+    "condition": "Given an HF radio set, a wire antenna, and a requirement to communicate within a skip zone.",
+    "behavior": "Demonstrate antenna configuration for Near-Vertical Incidence Skywave (NVIS) propagation.",
+    "standard": "Ensuring the antenna height is adjusted to achieve a high angle of incidence and a frequency is selected below the Maximum Usable Frequency (MUF) to establish communication within the skip zone per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Demonstrate",
+    "justification": "This is a procedural application of theory where the Marine must execute specific physical adjustments and settings to achieve a technical result in a field environment.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-16",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-053",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0053",
+    "condition": "Given a tactical radio, antenna, grounding stake, and mallet in a field environment.",
+    "behavior": "Perform grounding of an antenna system.",
+    "standard": "Ensuring the grounding stake is driven approximately one meter into the earth to minimize ground resistance and prevent transmitter power dissipation as heat per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Perform",
+    "justification": "This is a fundamental skill-based task requiring the execution of a standard procedure to meet a technical safety and performance requirement.",
+    "sourceRef": "MCRP 3-40.3C, Page 2-15",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-054",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0054",
+    "condition": "Given a tactical radio system experiencing interference from manmade noise sources.",
+    "behavior": "Troubleshoot manmade noise interference.",
+    "standard": "By reorienting antenna polarization, relocating equipment, or utilizing narrowband antennas to improve the signal-to-noise ratio and reject interfering signals per MCRP 3-40.3C.",
+    "cognitiveLevel": 4,
+    "verb": "Troubleshoot",
+    "justification": "Troubleshooting requires the Marine to diagnose the cause of a system failure (interference) and select the most effective mitigation strategy based on the specific environment.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-25",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-055",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0055",
+    "condition": "Given a vertical whip or monopole antenna, conductive material, and a tactical radio in an area with poor soil conductivity.",
+    "behavior": "Construct an artificial ground (counterpoise).",
+    "standard": "To provide an artificial ground that minimizes impedance and ensures maximum current flow for radiation by deploying radials or mesh at the antenna feed point per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Construct",
+    "justification": "The Marine must apply technical knowledge to build a physical component (the counterpoise) that enables the radio system to function effectively in a non-ideal environment.",
+    "sourceRef": "MCRP 3-40.3C, Page 2-15",
+    "validation": {
+      "valid": false,
+      "errors": [
+        "Verb \"Construct\" is a Level 6 verb, but Level 3 was specified. Approved verbs for Level 3: Demonstrate, Perform, Calculate, Apply, Execute, Implement, Use"
+      ],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-056",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0056",
+    "condition": "Given a transceiver, antenna, transmission line, and necessary connectors/baluns.",
+    "behavior": "Perform the installation of antenna transmission lines.",
+    "standard": "To connect the transceiver to the antenna while minimizing energy loss and matching impedance per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Perform",
+    "justification": "This task requires the physical execution of technical procedures to connect hardware components. Level 3 (Apply) is appropriate as the Marine must apply knowledge of connectors and impedance matching to a real-world equipment setup.",
+    "sourceRef": "MCRP 3-40.3C, Page 3-1 to 3-11",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-057",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0057",
+    "condition": "Given an HF radio, AS-2259/GR antenna kit, and a mission requirement.",
+    "behavior": "Demonstrate the employment of an AS-2259/GR antenna.",
+    "standard": "By assembling and orienting the antenna to establish HF Near Vertical Incidence Skywave (NVIS) communications per MCRP 6-22D.",
+    "cognitiveLevel": 3,
+    "verb": "Demonstrate",
+    "justification": "The objective requires the Marine to show mastery of a specific equipment kit. Level 3 (Apply) is the standard for operational tasks involving the assembly and use of standardized military hardware.",
+    "sourceRef": "MCRP 6-22D, Page 4-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-058",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0058",
+    "condition": "Given a VHF radio, OE-254 antenna kit, and a mission requirement.",
+    "behavior": "Demonstrate the employment of an OE-254 antenna.",
+    "standard": "By assembling and erecting the antenna to establish VHF line-of-sight (LOS) communications per MCRP 6-22D.",
+    "cognitiveLevel": 3,
+    "verb": "Demonstrate",
+    "justification": "This is a procedural task requiring the application of technical skills to establish a communication link using a specific antenna system. Level 3 (Apply) matches the job performance requirement for equipment employment.",
+    "sourceRef": "MCRP 6-22D, Page 5-10",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-059",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0059",
+    "condition": "Given a tactical scenario, unit location, and CIS requirements.",
+    "behavior": "Plan the siting of an antenna farm.",
+    "standard": "Accounting for tactical, technical, and doctrinal considerations per MCRP 6-22D.",
+    "cognitiveLevel": 6,
+    "verb": "Plan",
+    "justification": "Siting an antenna farm requires the Marine to synthesize multiple complex variables, including terrain analysis, electromagnetic interference, and tactical security, to create a functional layout. This falls under Level 6 (Create).",
+    "sourceRef": "MCRP 6-22D, Page 8-2",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-060",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0060",
+    "condition": "Given an HF radio, antenna wire, insulators, coaxial cable, and an assigned frequency.",
+    "behavior": "Construct a half-wave dipole antenna.",
+    "standard": "By calculating the required length and assembling the antenna to support HF communications at the assigned frequency per MCRP 6-22D.",
+    "cognitiveLevel": 6,
+    "verb": "Construct",
+    "justification": "Constructing a field-expedient antenna requires the Marine to formulate a solution from raw materials based on mathematical calculations. This synthesis of theory and physical production is classified as Level 6 (Create).",
+    "sourceRef": "MCRP 6-22D, Page 4-14",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-061",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0061",
+    "condition": "Given a VHF/UHF radio and a scenario where direct Line of Sight (LOS) is obstructed by terrain or structures,",
+    "behavior": "demonstrate communications using reflected waves,",
+    "standard": "by directing antennas toward a reflecting object to achieve practical communications per MCRP 6-22D.",
+    "cognitiveLevel": 3,
+    "verb": "Demonstrate",
+    "justification": "Level 3 (Apply) is appropriate because the Marine must apply the principles of wave propagation and reflection to a specific physical environment to achieve a functional result.",
+    "sourceRef": "MCRP 6-22D, Page 1-20",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-062",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0062",
+    "condition": "Given a mission requirement, a circuit distance, time of day, and MCRP 3-40.3C,",
+    "behavior": "determine the appropriate HF antenna for sky wave propagation,",
+    "standard": "ensuring the selection meets the required take-off angle and coverage requirements for the specified distance and time of day per Table 4-1.",
+    "cognitiveLevel": 5,
+    "verb": "Determine",
+    "justification": "Level 5 (Evaluate) is required because the Marine must judge multiple variables (distance, time, and site constraints) against doctrinal criteria to select the most effective solution.",
+    "sourceRef": "MCRP 3-40.3C, Page 4-3",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-063",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0063",
+    "condition": "Given a radio set, assigned frequency, wire, insulators, supports, and MCRP 3-40.3C,",
+    "behavior": "construct a field-expedient antenna,",
+    "standard": "to the calculated length for the assigned frequency, ensuring it is properly insulated and oriented to establish communication per MCRP 3-40.3C.",
+    "cognitiveLevel": 6,
+    "verb": "Construct",
+    "justification": "Level 6 (Create) is used because the Marine must synthesize raw materials and mathematical calculations to build a new, functional system from scratch.",
+    "sourceRef": "MCRP 3-40.3C, Pages 6-4 to 6-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-064",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0064",
+    "condition": "Given a damaged antenna system (whip, wire, guys, or masts), repair materials, and MCRP 3-40.3C,",
+    "behavior": "troubleshoot antenna components for field repair,",
+    "standard": "restoring the antenna system to an operational state ensuring electrical continuity and structural stability per MCRP 3-40.3C.",
+    "cognitiveLevel": 4,
+    "verb": "Troubleshoot",
+    "justification": "Level 4 (Analyze) is selected because the Marine must differentiate between functional and non-functional components and diagnose the specific point of failure before applying a fix.",
+    "sourceRef": "MCRP 3-40.3C, Page 6-1",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-065",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0065",
+    "condition": "Given a radio transmitter, an antenna, various transmission lines (coaxial or twin-lead), and MCRP 3-40.3C,",
+    "behavior": "implement transmission line installation,",
+    "standard": "matching the impedance of the system and minimizing attenuation loss per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Implement",
+    "justification": "Level 3 (Apply) is appropriate as this task involves executing a standardized technical procedure and following specific routing and connection rules.",
+    "sourceRef": "MCRP 3-40.3C, Page 3-7",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-066",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0076",
+    "condition": "Given antenna wire, a terminating resistor (approx. 500-600 ohms), an insulator, a mast or support, and a target azimuth.",
+    "behavior": "construct a field-expedient vertical half-rhombic antenna",
+    "standard": "ensuring the antenna is aligned within 5 degrees of the target azimuth to provide directional gain in the HF band per MCRP 3-40.3C.",
+    "cognitiveLevel": 6,
+    "verb": "Construct",
+    "justification": "The task requires the Marine to build a functional system from raw components (wire, resistors, supports) based on frequency calculations, which aligns with the 'Create' level of Bloom's Taxonomy.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 4, Page 4-37",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-067",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0077",
+    "condition": "Given a radio system, an antenna, and a requirement to establish communications with a distant station.",
+    "behavior": "demonstrate antenna orientation for polarization",
+    "standard": "matching the polarization of the electric field to achieve maximum signal pickup per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Demonstrate",
+    "justification": "This is a procedural task involving the physical manipulation of equipment to achieve a specific technical outcome, fitting the 'Apply' level.",
+    "sourceRef": "MCRP 3-40.3C, Page 2-7",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-068",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0078",
+    "condition": "Given a radio system experiencing interference from manmade sources such as power lines, vehicles, or electronic equipment.",
+    "behavior": "troubleshoot manmade noise interference",
+    "standard": "reducing interference to achieve a reliable signal-to-noise ratio that allows for clear communication per MCRP 3-40.3C.",
+    "cognitiveLevel": 4,
+    "verb": "Troubleshoot",
+    "justification": "The Marine must analyze the environment, identify the specific source of interference, and differentiate between various mitigation techniques to solve the problem.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-25",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-069",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0079",
+    "condition": "Given a mission requirement, an assigned frequency (HF, VHF, or UHF), and a specified range.",
+    "behavior": "apply antenna selection criteria",
+    "standard": "selecting an antenna configuration that supports the assigned frequency band and range requirements per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Apply",
+    "justification": "The Marine must use existing knowledge of antenna characteristics to implement the correct solution for a specific mission set.",
+    "sourceRef": "MCRP 3-40.3C, Foreword and Page 1-25",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-070",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0080",
+    "condition": "Given a tactical radio, a frequency, and a mission requirement.",
+    "behavior": "apply antenna polarization selection",
+    "standard": "matching the polarization (vertical, horizontal, or circular) to the frequency band and transmission mode (ground wave, sky wave, or SATCOM) per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Apply",
+    "justification": "This requires the execution of technical rules (e.g., matching polarization for LOS) to ensure communication reliability.",
+    "sourceRef": "MCRP 3-40.3C, Pages 2-8 to 2-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-071",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0081",
+    "condition": "Given a horizontal half-wave antenna, a distant station location, and a requirement to communicate.",
+    "behavior": "Demonstrate the orientation of a directional antenna.",
+    "standard": "Orient the antenna to maximize signal strength to the desired station and minimize interference from undesired stations per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Demonstrate",
+    "justification": "Level 3 (Apply) is required because the Marine must apply technical knowledge of azimuths and antenna patterns to a physical task in a field environment.",
+    "sourceRef": "MCRP 3-40.3C, Page 2-11",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-072",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0082",
+    "condition": "Given a grounded antenna system and grounding materials.",
+    "behavior": "Perform the establishment of an antenna ground.",
+    "standard": "Establish a ground connection with the highest possible conductivity to reduce ground losses and provide a reflecting surface for radiated energy per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Perform",
+    "justification": "Level 3 (Apply) is selected as this task involves the practical execution of a technical procedure to ensure equipment functionality.",
+    "sourceRef": "MCRP 3-40.3C, Page 2-11",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-073",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0083",
+    "condition": "Given a tactical radio, antenna components, and a mission requirement.",
+    "behavior": "Implement tactical single-channel radio (SCR) antennas.",
+    "standard": "Select and employ the appropriate antenna to convert a marginal net into a reliable net by optimizing signal strength at the receiving station per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Implement",
+    "justification": "Level 3 (Apply) is appropriate as the Marine must use equipment and procedures in a situational context to achieve a specific mission outcome.",
+    "sourceRef": "MCRP 3-40.3C, Foreword and Page 2-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-074",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0084",
+    "condition": "Given a mission requirement, a specific frequency band (HF, VHF, or UHF), and MCRP 3-40.3C.",
+    "behavior": "Analyze antenna characteristics for a radio communications circuit.",
+    "standard": "Match antenna characteristics to the required propagation path to provide the strongest possible signal-to-noise (S/N) ratio at the receiving antenna per MCRP 3-40.3C.",
+    "cognitiveLevel": 4,
+    "verb": "Analyze",
+    "justification": "Level 4 (Analyze) is necessary because the Marine must differentiate between multiple variables (frequency, range, and propagation path) to determine the optimal antenna selection.",
+    "sourceRef": "MCRP 3-40.3C, Pages 1-4 to 1-7",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-075",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0085",
+    "condition": "Given a transmitter, power supply (battery or generator), transmission lines, transmitting antenna, receiving antenna, and receiver.",
+    "behavior": "Execute the establishment of a radio link.",
+    "standard": "Successfully generate, radiate, propagate, intercept, and demodulate a signal so that information is available in a useful form at the receiving station per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Execute",
+    "justification": "Level 3 (Apply) is used as it involves the end-to-end execution of a technical process using provided components to achieve a measurable result.",
+    "sourceRef": "MCRP 3-40.3C, Pages 1-6 to 1-7",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-076",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0086",
+    "condition": "Given a tactical Single Channel Radio (SCR) and mission parameters.",
+    "behavior": "Execute radio propagation path configuration.",
+    "standard": "To establish a communication path using either ground wave or sky wave propagation based on distance and frequency band requirements per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Execute",
+    "justification": "Configuring a propagation path requires the Marine to apply knowledge of radio theory and environmental factors to a specific tactical situation to achieve a functional link.",
+    "sourceRef": "MCRP 3-40.3C, Pages 1-4, 1-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-077",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0087",
+    "condition": "Given a tactical requirement, a designated area of operations, and MCRP 3-40.3C.",
+    "behavior": "Determine a site for an antenna farm.",
+    "standard": "Ensuring maximum signal propagation and minimum interference while accounting for tactical, technical, and doctrinal considerations per MCRP 3-40.3C.",
+    "cognitiveLevel": 5,
+    "verb": "Determine",
+    "justification": "Site selection requires the Marine to evaluate and judge multiple competing factors (cover/concealment vs. technical line-of-sight) to make an optimal decision.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 8, Pages 8-1 to 8-11",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-078",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0088",
+    "condition": "Given a communication requirement (Range and Environment) and MCRP 3-40.3C.",
+    "behavior": "Apply frequency band and equipment selection criteria.",
+    "standard": "To meet the range requirement (HF for 0-50 miles ground/100-8000 sky; VHF for 0-30 miles; UHF for 0-50 miles) per MCRP 3-40.3C Table 1-1.",
+    "cognitiveLevel": 3,
+    "verb": "Apply",
+    "justification": "The Marine must use provided technical tables and range data to select the correct equipment for a specific operational need.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 1, Tables 1-1 and 1-2",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-079",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0089",
+    "condition": "Given multiple antennas, radio sets, and MCRP 3-40.3C.",
+    "behavior": "Plan an antenna farm layout.",
+    "standard": "To ensure electromagnetic compatibility and signal integrity per the layout principles in MCRP 3-40.3C.",
+    "cognitiveLevel": 6,
+    "verb": "Plan",
+    "justification": "Arranging an antenna farm requires synthesis of multiple components (antennas, power lines, polarization) into a new, functional physical arrangement.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 8, Pages 8-12 to 8-16",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-080",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0090",
+    "condition": "Given an HF radio, AS-2259/GR antenna kit, and a requirement to establish Near Vertical Incidence Skywave (NVIS) communications.",
+    "behavior": "Perform AS-2259/GR antenna employment.",
+    "standard": "By assembling and erecting the antenna to establish communications in accordance with MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Perform",
+    "justification": "This is a procedural, hands-on task requiring the execution of specific assembly and deployment steps to achieve a standard result.",
+    "sourceRef": "MCRP 3-40.3C, Page 4-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-081",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0091",
+    "condition": "Given a frequency, copper wire, insulators, feed line (coaxial or twin-lead), and support structures.",
+    "behavior": "construct a field-expedient half-wave dipole antenna",
+    "standard": "achieving a functional communication link per the calculated frequency requirements in MCRP 3-40.3C.",
+    "cognitiveLevel": 6,
+    "verb": "Construct",
+    "justification": "The task requires the Marine to synthesize raw materials (wire, insulators, feed line) and mathematical calculations (468/freq) to create a new functional antenna system tailored to a specific frequency.",
+    "sourceRef": "MCRP 3-40.3C, Page 4-14, 6-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-082",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0092",
+    "condition": "Given a radio system, ground rods, ground leads, and a site with low soil conductivity.",
+    "behavior": "implement an antenna ground system",
+    "standard": "minimizing resistance to provide an effective reflecting surface per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Implement",
+    "justification": "This is a hands-on task requiring the application of grounding procedures and soil treatment techniques to a specific physical environment.",
+    "sourceRef": "MCRP 3-40.3C, Page 2-21",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-083",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0093",
+    "condition": "Given a damaged wire antenna, splicing materials, and hand tools.",
+    "behavior": "perform field repair of wire antennas",
+    "standard": "restoring electrical continuity to support mission requirements per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Perform",
+    "justification": "The Marine must execute a specific set of mechanical skills (splicing and sealing) to restore a system to its operational state.",
+    "sourceRef": "MCRP 3-40.3C, Page 6-2",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-084",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0094",
+    "condition": "Given a balanced antenna, an unbalanced transmitter output, and a balun (balanced-to-unbalanced transformer).",
+    "behavior": "execute the integration of a balun into an antenna system",
+    "standard": "transforming energy between balanced and unbalanced circuits to reduce noise and improve signal quality per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Execute",
+    "justification": "This task involves the practical application of hardware components into a circuit to achieve a specific technical outcome.",
+    "sourceRef": "MCRP 3-40.3C, Page 3-11",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-085",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0095",
+    "condition": "Given a mission requirement, a tactical radio, and a specific frequency band (LF, MF, HF, VHF, or UHF).",
+    "behavior": "analyze antenna polarization requirements",
+    "standard": "ensuring transmitting and receiving antennas are oriented to provide the strongest possible signal and minimize loss per MCRP 6-22D.",
+    "cognitiveLevel": 4,
+    "verb": "Analyze",
+    "justification": "The Marine must evaluate multiple variables including frequency band and propagation mode (Ground vs. Sky wave) to determine the correct orientation, which requires breaking down the environmental factors to understand their relationship to signal strength.",
+    "sourceRef": "MCRP 6-22D, Page 2-8",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-086",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0096",
+    "condition": "Given a High Frequency (HF) radio net and observed signal degradation or loss.",
+    "behavior": "Analyze ionospheric effects on communications.",
+    "standard": "Identifying the specific ionospheric variation affecting the circuit and determining the impact on the communication link per MCRP 6-22D.",
+    "cognitiveLevel": 4,
+    "verb": "Analyze",
+    "justification": "The task requires the Marine to break down observed signal behavior (degradation/loss) into specific causes such as SID, Ionospheric Storms, or Sporadic E to understand the relationship between atmospheric conditions and circuit performance. This requires analysis of variables rather than simple recall or application.",
+    "sourceRef": "MCRP 6-22D, Page 1-14 to 1-15",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-087",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0097",
+    "condition": "Given a tactical radio, an antenna, and a requirement for long-distance communication.",
+    "behavior": "Execute sky wave transmission paths.",
+    "standard": "Determining the necessary frequency and angle of incidence to ensure the signal reflects off the ionosphere to the target skip distance per MCRP 6-22D.",
+    "cognitiveLevel": 3,
+    "verb": "Execute",
+    "justification": "This is a procedural task involving the application of technical calculations (critical angle, ionization density) to a specific operational requirement. The Marine must use information in a concrete situation to achieve a specific outcome.",
+    "sourceRef": "MCRP 6-22D, Page 1-15",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-088",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0098",
+    "condition": "Given a mission requirement, a high frequency (HF) radio, and current ionospheric conditions.",
+    "behavior": "Apply frequency selection for sky wave propagation.",
+    "standard": "Selecting a frequency that is below the critical frequency and above the absorption level of the D-layer to ensure reflection back to Earth, in accordance with MCRP 6-22D.",
+    "cognitiveLevel": 3,
+    "verb": "Apply",
+    "justification": "The Marine must use known ionospheric data and mission requirements to select a specific frequency. This is a direct application of technical knowledge to a task to ensure signal reflection.",
+    "sourceRef": "MCRP 6-22D, Pages 1-14 to 1-15",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-089",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0099",
+    "condition": "Given a tactical radio, a field-expedient or standard antenna, and a specified communication range requirement.",
+    "behavior": "Demonstrate antenna height adjustment for signal coverage.",
+    "standard": "Controlling the angle of incidence to either achieve Near-Vertical Incidence Skywave (NVIS) for short-range or low-angle radiation for long-range, ensuring the skip zone does not interfere with the target area per MCRP 6-22D.",
+    "cognitiveLevel": 3,
+    "verb": "Demonstrate",
+    "justification": "This is a physical, hands-on task where the Marine applies principles of antenna theory to achieve a specific signal pattern. It requires the execution of physical adjustments based on theoretical requirements.",
+    "sourceRef": "MCRP 6-22D, Page 1-16",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-090",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0100",
+    "condition": "Operating an HF radio net and experiencing irregular signal variations or fading.",
+    "behavior": "Troubleshoot HF signal degradation.",
+    "standard": "Identifying the cause of signal degradation and applying appropriate frequency or antenna management techniques to maintain the communication link per MCRP 6-22D.",
+    "cognitiveLevel": 4,
+    "verb": "Troubleshoot",
+    "justification": "Troubleshooting requires diagnosing a problem by differentiating between various potential causes (regular vs. irregular variations) and determining the correct solution. This involves analyzing the system state to find a resolution.",
+    "sourceRef": "MCRP 6-22D, Pages 1-14 to 1-16",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": [
+        "Condition should typically start with \"Given...\" or include \"when\" to describe circumstances."
+      ]
+    }
+  },
+  {
+    "id": "TLO-091",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0101",
+    "condition": "Given a directional antenna, a magnetic compass, a map of magnetic declination, and a target azimuth for the radio path,",
+    "behavior": "demonstrate the orientation of the antenna,",
+    "standard": "ensuring the antenna is aligned to the true azimuth of the radio path within +/- 10 degrees to achieve maximum signal strength per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Demonstrate",
+    "justification": "This task requires the physical application of tools and mathematical adjustment for declination to achieve a specific physical alignment, which aligns with Level 3 (Apply).",
+    "sourceRef": "MCRP 3-40.3C, Page 2-27",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-092",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0102",
+    "condition": "Given a radio circuit experiencing marginal signal quality, necessary tools, and operational equipment,",
+    "behavior": "troubleshoot the communication circuit,",
+    "standard": "by performing systematic technical adjustments until signal strength is optimized or restored to operational standards per MCRP 3-40.3C.",
+    "cognitiveLevel": 4,
+    "verb": "Troubleshoot",
+    "justification": "Troubleshooting requires the Marine to analyze the system components, identify the source of degradation, and determine the relationship between variables such as antenna height and location, fitting Level 4 (Analyze).",
+    "sourceRef": "MCRP 3-40.3C, Page 3-4",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-093",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0103",
+    "condition": "Given a transceiver, a transmission line with mismatched impedance, a load antenna, and a single operating frequency,",
+    "behavior": "calculate the required transmission line length,",
+    "standard": "to achieve maximum energy transfer and minimize reflected energy by cutting the line to a specific half or quarter-wavelength per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Calculate",
+    "justification": "This task involves applying mathematical formulas to a specific frequency to determine a physical measurement required for technical implementation, fitting Level 3 (Apply).",
+    "sourceRef": "MCRP 3-40.3C, Page 3-5",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-094",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0104",
+    "condition": "Given a tactical Single Channel Radio (SCR), power supply, transmission lines, antennas, and a distant station,",
+    "behavior": "implement a radio communications circuit,",
+    "standard": "establishing a link that provides the greatest signal-to-noise (S/N) ratio and ensures information is available in a useful form per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Implement",
+    "justification": "The Marine must execute a series of procedural steps (modulation, propagation, and demodulation) to achieve a functional end-state capability, which is a Level 3 (Apply) task.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-6",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-095",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0105",
+    "condition": "Given a mission requirement with specific range and terrain constraints,",
+    "behavior": "apply frequency band selection criteria,",
+    "standard": "to select the HF, VHF, or UHF band and corresponding equipment that meets range requirements and accounts for Line of Sight (LOS) obstructions per MCRP 3-40.3C Tables 1-1 and 1-2.",
+    "cognitiveLevel": 3,
+    "verb": "Apply",
+    "justification": "The Marine must use technical knowledge of frequency characteristics and equipment capabilities to make a selection based on specific mission constraints, representing Level 3 (Apply).",
+    "sourceRef": "MCRP 3-40.3C, Pages 1-4 to 1-5",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-096",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0106",
+    "condition": "Given a radio circuit operating over varying terrain and MCRP 3-40.3C,",
+    "behavior": "Apply ground wave propagation factors",
+    "standard": "to maintain a radio link by adjusting frequency and antenna height to overcome surface absorption and Earth's curvature per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Apply",
+    "justification": "The task requires the Marine to use knowledge of ground wave variables (conductivity, LOS, absorption) and apply them to a specific environmental situation to maintain connectivity. This is a direct application of theory to a practical problem.",
+    "sourceRef": "MCRP 3-40.3C, Pages 1-9 to 1-11",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-097",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0107",
+    "condition": "Given a requirement for long-distance communications beyond the horizon and MCRP 3-40.3C,",
+    "behavior": "Execute sky wave propagation techniques",
+    "standard": "to establish a communication path between 50 and 8000 miles using ionospheric refraction in accordance with MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Execute",
+    "justification": "Establishing a sky wave link involves following a sequence of steps (frequency selection based on time of day, antenna orientation) to achieve a specific outcome. This falls under the 'Apply' level of Bloom's Taxonomy.",
+    "sourceRef": "MCRP 3-40.3C, Pages 1-9 to 1-11",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-098",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0108",
+    "condition": "Given a mission requirement specifying range and environment, and MCRP 6-22D,",
+    "behavior": "Apply frequency band selection criteria",
+    "standard": "to meet mission range and propagation requirements as defined in Table 1-1 and Table 1-2 of MCRP 6-22D.",
+    "cognitiveLevel": 3,
+    "verb": "Apply",
+    "justification": "The Marine must use the provided technical tables and mission constraints to make a correct selection. This requires applying technical standards to a specific scenario.",
+    "sourceRef": "MCRP 6-22D, Pages 1-4 to 1-5",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-099",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0109",
+    "condition": "Given an HF radio system, antenna components, and a requirement for short-range skywave communication,",
+    "behavior": "Demonstrate Near-Vertical Incidence Skywave (NVIS) antenna configuration",
+    "standard": "to provide broad signal coverage without a skip zone by adjusting antenna height and angle of incidence per MCRP 6-22D.",
+    "cognitiveLevel": 3,
+    "verb": "Demonstrate",
+    "justification": "This is a performance-based task where the Marine must physically manipulate equipment to achieve a specific propagation effect, representing the application of NVIS theory.",
+    "sourceRef": "MCRP 6-22D, Page 1-16",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-100",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0110",
+    "condition": "Given a tactical radio system and MCRP 6-22D,",
+    "behavior": "Identify the seven components of a radio communication link",
+    "standard": "to ensure system integrity and troubleshooting capability per MCRP 6-22D.",
+    "cognitiveLevel": 1,
+    "verb": "Identify",
+    "justification": "This objective requires the Marine to recall and recognize the specific parts of a system. It is a foundational knowledge requirement at the 'Remember' level.",
+    "sourceRef": "MCRP 6-22D, Page 1-5",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-101",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0111",
+    "condition": "Given an HF radio circuit experiencing periodic fluctuations in received signal strength.",
+    "behavior": "Troubleshoot signal fading in HF communications.",
+    "standard": "By implementing mitigation techniques to maintain a reliable receiving signal above the background noise level without relying solely on increased transmitter power, per MCRP 6-22D.",
+    "cognitiveLevel": 4,
+    "verb": "Troubleshoot",
+    "justification": "The Marine must analyze the signal-to-noise ratio and atmospheric conditions (MUF/LUF) to differentiate between types of fading and determine the appropriate technical adjustment, which requires Level 4 analysis.",
+    "sourceRef": "MCRP 6-22D, Pages 1-16 to 1-17",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-102",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0112",
+    "condition": "Given a mission requirement, a tactical radio, and MCRP 3-40.3C.",
+    "behavior": "Apply antenna selection criteria for Single-Channel Radio (SCR) operations.",
+    "standard": "To provide the strongest possible signal at the receiving station based on the military radio frequency band and operational environment per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Apply",
+    "justification": "The task requires the Marine to use mission and environmental information to select the correct antenna configuration, representing a direct application of technical knowledge to a situational requirement.",
+    "sourceRef": "MCRP 3-40.3C, Foreword",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-103",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0113",
+    "condition": "Given a tactical radio, common timing, frequency data, and mission requirements.",
+    "behavior": "Execute jam resistance and COMSEC procedures.",
+    "standard": "To establish secure voice communication and jam resistance through frequency hopping while minimizing susceptibility to enemy electronic warfare per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Execute",
+    "justification": "The Marine must perform a sequence of technical steps (timing, COMSEC, frequency hopping) to achieve a secure link, which is a procedural application of skills.",
+    "sourceRef": "MCRP 3-40.3C, Foreword",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "TLO-104",
+    "type": "TLO",
+    "trEventId": "0621-ANT-0114",
+    "condition": "Given a tactical radio with SATCOM capability and limited spectrum availability.",
+    "behavior": "Implement SCR Satellite Communications (SATCOM).",
+    "standard": "To provide mobile, flexible communications with unlimited range while coordinating for limited spectrum availability per MCRP 3-40.3C.",
+    "cognitiveLevel": 3,
+    "verb": "Implement",
+    "justification": "Establishing a SATCOM link requires the Marine to configure equipment and coordinate external variables (spectrum) to achieve a functional communication architecture.",
+    "sourceRef": "MCRP 3-40.3C, Foreword",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  }
+]

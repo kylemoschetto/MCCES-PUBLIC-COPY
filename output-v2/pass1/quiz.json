@@ -1,0 +1,682 @@
+[
+  {
+    "id": "Q-001",
+    "eloId": "ELO-001",
+    "question": "According to Figure 1-1 in MCRP 3-40.3C, what are the frequency limits for the High Frequency (HF) band?",
+    "options": [
+      {
+        "label": "A",
+        "text": "30 to 300 kHz",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "3 to 30 MHz",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "30 to 300 MHz",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "300 to 3,000 MHz",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Per Figure 1-1, the HF band is defined as 3 to 30 MHz. 30-300 MHz is VHF, and 300-3,000 MHz is UHF.",
+    "sourceRef": "MCRP 3-40.3C, Figure 1-1, Page 1-1",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "Q-002",
+    "eloId": "ELO-002",
+    "question": "When classifying tactical radio frequency bands and ensuring unit consistency per MCRP 3-40.3C, what is the standard common unit of measurement used for frequency classification?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Kilohertz (kHz)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Megahertz (MHz)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Gigahertz (GHz)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Hertz (Hz)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "MCRP 3-40.3C Figure 1-1 and the associated text classify the primary tactical bands (HF, VHF, UHF) using Megahertz (MHz) as the standard unit for comparison.",
+    "sourceRef": "MCRP 3-40.3C, Figure 1-1, Page 1-1",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "Q-003",
+    "eloId": "ELO-003",
+    "question": "What is the constant value for the speed of light in meters per second as stated in the radio principles section of MCRP 3-40.3C?",
+    "options": [
+      {
+        "label": "A",
+        "text": "186,000 meters per second",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "300,000 meters per second",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "186,000,000 meters per second",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "300,000,000 meters per second",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "Chapter 1 states that all electromagnetic radiation moves at the speed of light, which is 186,000 miles or 300 million (300,000,000) meters per second.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-1",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "Q-004",
+    "eloId": "ELO-004",
+    "question": "A radio operator is calculating antenna length and needs to convert a frequency of 30 MHz into Hertz (Hz). What is the correct value?",
+    "options": [
+      {
+        "label": "A",
+        "text": "30,000 Hz",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "300,000 Hz",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "3,000,000 Hz",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "30,000,000 Hz",
+        "isCorrect": true
+      }
+    ],
+    "explanation": "To convert Megahertz to Hertz, you multiply by 1,000,000. 30 MHz is equal to 30,000,000 Hz. This conversion is necessary for mathematical accuracy when using the speed of light constant (m/s).",
+    "sourceRef": "MCRP 3-40.3C, Page 1-1 to 1-3",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "Q-005",
+    "eloId": "ELO-005",
+    "question": "Based on the radio principles and glossary in MCRP 3-40.3C, how is radio wave propagation defined?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The movement of electromagnetic waves through a medium or space.",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "The process of amplifying a signal at the transmitter.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "The conversion of radio frequency energy into audio signals.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The interference caused by manmade or natural noise sources.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Propagation refers to the fundamentals of how radio waves travel (move) through the atmosphere or space from the transmitting antenna to the receiving antenna.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-8 and Glossary",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "Q-006",
+    "eloId": "ELO-006",
+    "question": "According to the propagation fundamentals in MCRP 3-40.3C, what are the two primary components of a radio wave?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Direct wave and reflected wave",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Ground wave and sky wave",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Surface wave and space wave",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Incident wave and refracted wave",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "MCRP 3-40.3C identifies the ground wave and the sky wave as the two primary components of radio wave propagation (Page 1-8).",
+    "sourceRef": "MCRP 3-40.3C, Page 1-8",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "Q-007",
+    "eloId": "ELO-007",
+    "question": "Which set of environmental factors is specifically identified in MCRP 3-40.3C as causes of path loss and interference?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Resonance, gain, and reciprocity",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Polarization, azimuth, and takeoff angle",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Reflection, diffraction, and noise",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Modulation, amplification, and oscillation",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Chapter 1 of MCRP 3-40.3C details factors affecting propagation, specifically listing reflected waves, diffraction, and noise (natural and manmade) as primary causes of signal degradation and interference.",
+    "sourceRef": "MCRP 3-40.3C, Pages 1-19 to 1-23",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "Q-008",
+    "eloId": "ELO-008",
+    "question": "In accordance with the metric prefixes used for frequency calculation, which prefix represents 1,000,000 Hertz (10^6)?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Kilohertz (kHz)",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Megahertz (MHz)",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "Gigahertz (GHz)",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Terahertz (THz)",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The prefix 'Mega' corresponds to the power of 10^6, or one million units. In radio frequency, this is Megahertz (MHz).",
+    "sourceRef": "MCRP 3-40.3C, Chapter 1, Page 1-2",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "Q-009",
+    "eloId": "ELO-009",
+    "question": "When converting a frequency value from Megahertz (MHz) to Kilohertz (kHz), how must the decimal point be moved to account for the 1,000-unit interval?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Three places to the left",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Six places to the right",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Three places to the right",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Six places to the left",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Because there is a 1,000-unit interval between metric prefixes (Kilo to Mega), converting from a larger unit (MHz) to a smaller unit (kHz) requires multiplying by 1,000, which moves the decimal point three places to the right.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 1, Page 1-3",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "Q-010",
+    "eloId": "ELO-010",
+    "question": "When calculating the length of a half-wave antenna in feet, which constant value must be used in the formula?",
+    "options": [
+      {
+        "label": "A",
+        "text": "234",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "468",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "492",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "936",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "MCRP 3-40.3C specifies the constant 468 for calculating the length of a half-wave antenna in feet, while 234 is used for a quarter-wave antenna.",
+    "sourceRef": "MCRP 3-40.3C, Page 2-24",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "Q-011",
+    "eloId": "ELO-011",
+    "question": "According to MCRP 3-40.3C, what is the relationship between the operating frequency and the required physical length of an antenna radiator?",
+    "options": [
+      {
+        "label": "A",
+        "text": "As frequency increases, the physical length of the radiator must increase.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "As frequency increases, the physical length of the radiator must decrease.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "The physical length of the radiator remains constant regardless of frequency changes.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The physical length is only affected by the power output, not the frequency.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Frequency and wavelength are inversely proportional. Because the physical length of an antenna is determined by the wavelength it is designed to resonate at, an increase in frequency (shorter wavelength) requires a shorter physical radiator.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 1, Page 1-2",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "Q-012",
+    "eloId": "ELO-012",
+    "question": "Using the standard formula for a half-wave dipole, what is the required length for a single leg (one element) of a center-fed doublet antenna designed for 12 MHz?",
+    "options": [
+      {
+        "label": "A",
+        "text": "39 feet",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "78 feet",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "19.5 feet",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "46.8 feet",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The formula for the total length of a half-wave dipole is 468 / frequency in MHz. For 12 MHz, the total length is 39 feet. Since a doublet consists of two legs, the length of a single leg is half the total length (39 / 2 = 19.5 feet).",
+    "sourceRef": "MCRP 3-40.3C, Chapter 2, Section III",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "Q-013",
+    "eloId": "ELO-013",
+    "question": "Which of the following components are considered essential for the construction of a field-expedient center-fed doublet antenna?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Radiators, insulators, and transmission lines",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Vertical whip, base mount, and ground rod",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Reflector, director, and boom",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Loading coil, whip, and counterpoise",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Per MCRP 3-40.3C, a center-fed doublet (dipole) requires two radiator elements, insulators to isolate the ends and the center feed point, and a transmission line to connect the antenna to the radio.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 6, Page 6-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "Q-014",
+    "eloId": "ELO-014",
+    "question": "To achieve optimal radiation and minimize ground loss, what is the recommended height for a horizontal center-fed doublet antenna?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Exactly 1/8 wavelength above the ground.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Between 1/4 and 1/2 wavelength above the ground.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "At least 2 full wavelengths above the ground.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The antenna should be placed directly on the ground for stability.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "For horizontal antennas like the doublet, a height of 1/4 to 1/2 wavelength is generally required to ensure the radiation pattern is not suppressed by ground reflections and to achieve the desired take-off angle.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 6, Page 6-7",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "Q-015",
+    "eloId": "ELO-015",
+    "question": "When connecting a transmission line to the radiator elements of a doublet antenna, what is the primary purpose of the center insulator?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To increase the gain of the antenna by 3dB.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "To provide a connection point that prevents mechanical strain on the electrical junctions.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "To change the polarization from horizontal to vertical.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "To act as a lightning arrestor for the transmission line.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The center insulator provides the necessary mechanical support to hold the two radiator legs together while keeping them electrically isolated from each other, ensuring the transmission line's weight does not break the electrical connections.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 6, Page 6-4",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "Q-016",
+    "eloId": "ELO-016",
+    "question": "According to MCRP 3-40.3C, Section II, which of the following are recognized types of antenna grounds?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Ground rods, counterpoise, and ground screens",
+        "isCorrect": true
+      },
+      {
+        "label": "B",
+        "text": "Insulators, baluns, and coaxial shields",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Resonators, dipoles, and whips",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "Reflectors, directors, and radiators",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "MCRP 3-40.3C, Section II, specifically identifies ground rods, counterpoise, and ground screens as the primary methods for grounding antenna systems.",
+    "sourceRef": "MCRP 3-40.3C, Section II, Page 2-20",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "Q-017",
+    "eloId": "ELO-017",
+    "question": "What is the primary purpose of implementing an antenna grounding system in tactical communications?",
+    "options": [
+      {
+        "label": "A",
+        "text": "To increase the antenna's bandwidth and reduce signal interference.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "To improve radiation efficiency and ensure operator safety from electrical shock.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "To change the antenna's polarization from vertical to horizontal.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "To reduce the physical length required for resonance.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Grounding systems are essential for both the technical performance of the antenna (radiation efficiency) and the physical safety of the Marine (protection from electrical shock).",
+    "sourceRef": "MCRP 3-40.3C, Section II, Page 2-19",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "Q-018",
+    "eloId": "ELO-018",
+    "question": "When installing a ground rod for a radio site, what is the most critical factor to ensure an effective ground?",
+    "options": [
+      {
+        "label": "A",
+        "text": "Driving the rod at a 45-degree angle to the antenna mast.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "Ensuring the rod is painted to prevent soil corrosion.",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "Driving the rod into the earth to provide a low-resistance path.",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "Placing the rod at least 100 feet away from the transmitter.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "The effectiveness of a ground rod is determined by its ability to provide a low-resistance path to the earth, which is achieved by driving it to the appropriate depth.",
+    "sourceRef": "MCRP 3-40.3C, Section II, Page 2-20",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "Q-019",
+    "eloId": "ELO-019",
+    "question": "In antenna orientation, how is the term 'azimuth' defined?",
+    "options": [
+      {
+        "label": "A",
+        "text": "The vertical angle of a radio wave as it leaves the antenna.",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "The horizontal angle or direction of a compass bearing.",
+        "isCorrect": true
+      },
+      {
+        "label": "C",
+        "text": "The ratio of reflected power to forward power in a transmission line.",
+        "isCorrect": false
+      },
+      {
+        "label": "D",
+        "text": "The physical height of the antenna above ground level.",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "Azimuth refers to the horizontal direction of a compass bearing, which is critical for pointing directional antennas toward a distant station.",
+    "sourceRef": "MCRP 3-40.3C, Section IV, Page 2-26",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "Q-020",
+    "eloId": "ELO-020",
+    "question": "A radio operator identifies a grid azimuth of 090 degrees on a map. If the G-M angle is 10 degrees Easterly (Add), what magnetic azimuth must be used to point the antenna?",
+    "options": [
+      {
+        "label": "A",
+        "text": "080 degrees",
+        "isCorrect": false
+      },
+      {
+        "label": "B",
+        "text": "090 degrees",
+        "isCorrect": false
+      },
+      {
+        "label": "C",
+        "text": "100 degrees",
+        "isCorrect": true
+      },
+      {
+        "label": "D",
+        "text": "110 degrees",
+        "isCorrect": false
+      }
+    ],
+    "explanation": "To convert grid to magnetic azimuth with an Easterly G-M angle, the operator adds the G-M angle to the grid azimuth (90 + 10 = 100).",
+    "sourceRef": "MCRP 3-40.3C, Section IV, Page 2-26",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  }
+]

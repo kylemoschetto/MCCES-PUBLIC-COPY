@@ -1,0 +1,919 @@
+[
+  {
+    "id": "TASK-001",
+    "title": "Calculate radio frequency and wavelength",
+    "description": "Perform mathematical calculations to determine frequency when wavelength is known, or wavelength when frequency is known, using the constant velocity of 300,000,000 meters per second.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-3",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-002",
+    "title": "Select an antenna based on mission requirements",
+    "description": "Select the appropriate antenna type (HF, VHF, or UHF) and configuration based on the required range, frequency band, and mobility requirements of the MAGTF.",
+    "sourceRef": "MCRP 3-40.3C, Foreword / Chapter 4",
+    "suggestedLevel": 4
+  },
+  {
+    "id": "TASK-003",
+    "title": "Calculate antenna length",
+    "description": "Determine the physical dimensions required for an antenna based on the specific operating frequency to ensure resonance.",
+    "sourceRef": "MCRP 3-40.3C, Page 2-24",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-004",
+    "title": "Orient an antenna for azimuth",
+    "description": "Physically align a directional antenna to a specific azimuth to improve marginal communications and ensure the transmission of strong signals.",
+    "sourceRef": "MCRP 3-40.3C, Page 2-26",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-005",
+    "title": "Connect a transceiver to an antenna",
+    "description": "Directly connect a transceiver to an antenna using appropriate transmission lines, cable connectors, and baluns while minimizing energy loss.",
+    "sourceRef": "MCRP 3-40.3C, Page 3-9 to 3-11",
+    "suggestedLevel": 2
+  },
+  {
+    "id": "TASK-006",
+    "title": "Repair antenna components in the field",
+    "description": "Perform field repairs on whip antennas, wire antennas, guys, and masts using available materials to restore communication capabilities.",
+    "sourceRef": "MCRP 3-40.3C, Page 6-1 to 6-4",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-007",
+    "title": "Construct a field expedient antenna",
+    "description": "Build functional antennas (such as an End-Fed Half-Wave or Center-Fed Doublet) using field-expedient materials and techniques for HF or VHF communications.",
+    "sourceRef": "MCRP 3-40.3C, Page 6-7 to 6-9",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-008",
+    "title": "Site a SATCOM antenna",
+    "description": "Select an appropriate location for satellite communications antennas, considering terrain, obstacles, and horizon angles.",
+    "sourceRef": "MCRP 3-40.3C, Page 7-4",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-009",
+    "title": "Determine horizon angles",
+    "description": "Measure or calculate the angle of the horizon at a specific site to ensure a clear line of sight for satellite or line-of-sight communications.",
+    "sourceRef": "MCRP 3-40.3C, Page 7-4",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-010",
+    "title": "Layout an antenna farm",
+    "description": "Organize the internal arrangement of multiple antennas at a command post, considering frequency bands, polarization, and power/signal line placement to minimize interference.",
+    "sourceRef": "MCRP 3-40.3C, Page 8-12 to 8-16",
+    "suggestedLevel": 4
+  },
+  {
+    "id": "TASK-011",
+    "title": "Select Single Channel Radio (SCR) equipment based on frequency requirements",
+    "description": "Identify and select the appropriate radio system (HF, VHF, or UHF) and specific nomenclature (e.g., AN/PRC-104, AN/PRC-119) based on the required frequency range and mission application.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-6",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-012",
+    "title": "Establish a radio communications circuit",
+    "description": "Configure a radio link consisting of a transmitter, power supply, transmission lines, antennas, and receiver to generate, radiate, and demodulate electromagnetic waves.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-7",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-013",
+    "title": "Match antenna characteristics to the propagation path",
+    "description": "Select and configure an antenna that aligns with the intended propagation path (ground wave or sky wave) to maximize the signal-to-noise (S/N) ratio.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-7",
+    "suggestedLevel": 4
+  },
+  {
+    "id": "TASK-014",
+    "title": "Evaluate terrain for surface wave conductivity",
+    "description": "Assess the Earth's surface type (e.g., sea water, loamy soil, desert) to determine the relative conductivity and its impact on surface wave signal absorption.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-12, Table 1-3",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-015",
+    "title": "Predict regular ionospheric variations for sky wave communications",
+    "description": "Analyze daily, seasonal, 27-day, and 11-year sunspot cycles to anticipate changes in the ionosphere's ability to reflect radio waves.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-13",
+    "suggestedLevel": 4
+  },
+  {
+    "id": "TASK-016",
+    "title": "Determine critical frequency for sky wave transmission",
+    "description": "Identify the upper frequency limit for a specific ionized layer to ensure radio waves are reflected back to Earth at a given angle of incidence.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-15",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-017",
+    "title": "Identify irregular ionospheric disturbances",
+    "description": "Recognize the signs of Sporadic E, Sudden Ionospheric Disturbances (SID), and ionospheric storms (flutter fading) to troubleshoot communication outages.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-15",
+    "suggestedLevel": 2
+  },
+  {
+    "id": "TASK-018",
+    "title": "Calculate Line of Sight (LOS) distance for direct waves",
+    "description": "Determine the maximum distance for direct wave propagation based on antenna height and atmospheric refraction/diffraction factors.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-10",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-019",
+    "title": "Adjust antenna height to control signal coverage",
+    "description": "Manipulate the height of the transmitting antenna in relation to the operating frequency to control the angle of incidence and the resulting skip distance or coverage area.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-16",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-020",
+    "title": "Employ Near-Vertical Incidence Skywave (NVIS) techniques",
+    "description": "Configure antenna height and transmission paths to utilize near-vertical transmission for short-range skywave communications, avoiding undesirable skip zones.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-16",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-021",
+    "title": "Select operating frequencies to mitigate fading",
+    "description": "Identify and select the correct frequency and use transmitting/receiving equipment to ensure a reliable signal despite periodic increases and decreases in signal strength.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-17",
+    "suggestedLevel": 4
+  },
+  {
+    "id": "TASK-022",
+    "title": "Determine Maximum Usable Frequency (MUF) and Lowest Usable Frequency (LUF)",
+    "description": "Calculate or predict the MUF and LUF for a specific communication path based on time of day, distance, and atmospheric conditions to ensure skywave transmission is possible.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-18",
+    "suggestedLevel": 4
+  },
+  {
+    "id": "TASK-023",
+    "title": "Generate propagation predictions using SPEED",
+    "description": "Utilize the System Planning, Engineering, and Evaluation Device (SPEED) to obtain detailed propagation predictions for mission planning.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-19",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-024",
+    "title": "Select a radio site to minimize signal interference",
+    "description": "Evaluate and select receiver and transmitter locations that avoid proximity to airfields, high-flying aircraft paths, and man-made objects (buildings/towers) that cause reflections or signal cancellation.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-19",
+    "suggestedLevel": 4
+  },
+  {
+    "id": "TASK-025",
+    "title": "Establish communications using reflected wave propagation",
+    "description": "Direct transmitting and receiving antennas toward a point of maximum reflection (such as a mountain or large structure) to communicate beyond normal line-of-sight distances.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-20",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-026",
+    "title": "Select antenna polarization for Line-of-Sight (LOS) paths",
+    "description": "Determine and apply the appropriate polarization (vertical or horizontal) to reduce phase differences between direct and reflected waves over LOS paths.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-21",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-027",
+    "title": "Establish communications using diffraction",
+    "description": "Utilize the bending of radio waves over curved surfaces or mountain ridges to communicate in the VHF and UHF ranges when a direct line-of-sight is obstructed.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-23",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-028",
+    "title": "Configure equipment for tropospheric scatter communications",
+    "description": "Employ high-power transmitters (greater than 1 kW) and high-gain antennas (10 dB or more) with sensitive receivers to communicate via atmospheric 'blobs' over distances up to 500 km.",
+    "sourceRef": "MCRP 3-40.3C, Page 1-24",
+    "suggestedLevel": 4
+  },
+  {
+    "id": "TASK-029",
+    "title": "Mitigate manmade electromagnetic interference",
+    "description": "Identify and reduce manmade noise by orienting antennas horizontally, balancing transmission lines with respect to ground, or relocating the receiving system at least one kilometer from noise sources.",
+    "sourceRef": "MCRP 3-40.3C, 1-25",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-030",
+    "title": "Select antenna polarization based on frequency and propagation mode",
+    "description": "Determine the required antenna polarization (vertical, horizontal, or circular) based on the frequency band (LF, MF, HF, VHF, UHF) and the intended propagation path (ground wave, sky wave, or satellite).",
+    "sourceRef": "MCRP 3-40.3C, 2-9",
+    "suggestedLevel": 4
+  },
+  {
+    "id": "TASK-031",
+    "title": "Configure antenna for ground wave transmission",
+    "description": "Deploy vertically polarized antennas for medium and low frequency ground wave circuits to prevent the shorting out of horizontal lines of electric force by the Earth's surface.",
+    "sourceRef": "MCRP 3-40.3C, 2-9",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-032",
+    "title": "Configure antenna for sky wave transmission",
+    "description": "Deploy horizontal or vertical antennas for high frequency (HF) sky wave transmission, prioritizing horizontal antennas to achieve effective high-angle radiation and directional properties.",
+    "sourceRef": "MCRP 3-40.3C, 2-9",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-033",
+    "title": "Orient antenna for maximum signal reception",
+    "description": "Align the receiving antenna in the same direction as the electric field component of the incoming radio wave (matching polarization) to achieve maximum signal pickup.",
+    "sourceRef": "MCRP 3-40.3C, 2-8",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-034",
+    "title": "Employ antenna directionality to minimize interference",
+    "description": "Select and position antennas (omnidirectional, bidirectional, or unidirectional) to optimize signal strength to friendly units while minimizing interference from specific directions or enemy forces.",
+    "sourceRef": "MCRP 3-40.3C, 2-5, 2-10",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-035",
+    "title": "Balance antenna and transmission lines",
+    "description": "Balance the antenna and transmission line with respect to ground to ensure noise voltages cancel at the receiver input terminals.",
+    "sourceRef": "MCRP 3-40.3C, 1-25",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-036",
+    "title": "Select antenna for low frequency (LF) operations",
+    "description": "Utilize a 1.5 meter tuned whip or appropriate large-signal collection antenna for frequencies below 1 MHz to overcome dominant atmospheric noise.",
+    "sourceRef": "MCRP 3-40.3C, 1-25",
+    "suggestedLevel": 2
+  },
+  {
+    "id": "TASK-037",
+    "title": "Employ narrowband antennas for interference rejection",
+    "description": "Utilize narrowband antennas in crowded HF environments to reject strong interfering signals near the desired operating frequency.",
+    "sourceRef": "MCRP 3-40.3C, 1-25",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-038",
+    "title": "Orient a horizontal half-wave antenna for interference reduction",
+    "description": "Adjust the physical orientation of a horizontal half-wave antenna so that the ends of the antenna point directly at an interfering station to minimize undesired signals.",
+    "sourceRef": "MCRP 3-40.3C, Page 2-11",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-039",
+    "title": "Match antenna length to operating frequency",
+    "description": "Achieve resonance by physically or electronically matching the length of the antenna to the radio wave frequency to ensure effective radiation.",
+    "sourceRef": "MCRP 3-40.3C, Page 2-12",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-040",
+    "title": "Relocate a receiving antenna to mitigate electromagnetic scattering",
+    "description": "Identify and move a receiving antenna within a congested environment or building to a location where reflected and direct signals reinforce rather than cancel each other.",
+    "sourceRef": "MCRP 3-40.3C, Page 2-13",
+    "suggestedLevel": 4
+  },
+  {
+    "id": "TASK-041",
+    "title": "Install a ground connection for a vertical antenna",
+    "description": "Establish a ground or artificial ground (counterpoise) for a vertical whip or monopole to minimize transmitter power dissipation and maximize radiation efficiency.",
+    "sourceRef": "MCRP 3-40.3C, Page 2-15",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-042",
+    "title": "Measure antenna bandwidth",
+    "description": "Determine the frequency range of an antenna by changing the frequency of a constant-strength test signal and measuring the points where power output is one-half (-3 dB) of the center frequency.",
+    "sourceRef": "MCRP 3-40.3C, Page 2-16",
+    "suggestedLevel": 4
+  },
+  {
+    "id": "TASK-043",
+    "title": "Select antenna take-off angle based on circuit distance",
+    "description": "Configure or select an HF antenna with a high take-off angle for short-range communications or a low take-off angle for long-range communications.",
+    "sourceRef": "MCRP 3-40.3C, Page 2-19",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-044",
+    "title": "Construct a field-expedient ground connection",
+    "description": "Create a low-resistance ground connection using metal rods, existing grounded structures, underground pipe systems, or bayonets driven into the soil.",
+    "sourceRef": "MCRP 3-40.3C, Page 2-21",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-045",
+    "title": "Treat soil to reduce antenna ground resistance",
+    "description": "Apply conductive substances such as sodium chloride, calcium chloride, or magnesium sulfate to soil to improve conductivity, ensuring substances do not contaminate nearby drinking water supplies.",
+    "sourceRef": "MCRP 6-22D, Page 2-22",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-046",
+    "title": "Fabricate a field-expedient ground rod",
+    "description": "Construct a ground rod from pipe or conduit by cleaning the connection point with sandpaper, installing a ground clamp, and soldering or joining a ground wire protected by tape.",
+    "sourceRef": "MCRP 6-22D, Page 2-22",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-047",
+    "title": "Install a wire counterpoise",
+    "description": "Erect a wire device a short distance above the ground and insulated from it to serve as an artificial ground, ensuring the size is at least equal to the antenna.",
+    "sourceRef": "MCRP 6-22D, Page 2-23",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-048",
+    "title": "Install a ground screen",
+    "description": "Lay a large area of metal mesh or screen on the ground surface under an antenna to reduce ground absorption losses and stabilize radiation resistance.",
+    "sourceRef": "MCRP 6-22D, Page 2-24",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-049",
+    "title": "Calculate physical antenna length for a half-wave antenna",
+    "description": "Apply the correction factor of 0.95 to the frequency-based formula to determine the physical length in meters or feet for frequencies between 3 and 50 MHz.",
+    "sourceRef": "MCRP 6-22D, Page 2-25",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-050",
+    "title": "Calculate physical length for a long-wire antenna",
+    "description": "Apply the harmonic operation formula (Length = 150(N - 0.05) / Frequency) to determine the physical length of an antenna one wavelength or longer.",
+    "sourceRef": "MCRP 6-22D, Page 2-25",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-051",
+    "title": "Orient an antenna using a magnetic compass",
+    "description": "Determine the correct azimuth for antenna placement using a magnetic compass and a magnetic declination map to account for variation from true north.",
+    "sourceRef": "MCRP 6-22D, Page 2-27",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-052",
+    "title": "Troubleshoot marginal radio communications",
+    "description": "Perform a sequence of corrective actions including checking cable couplings, retuning equipment, adjusting antenna height, and relocating antennas to improve circuit quality.",
+    "sourceRef": "MCRP 6-22D, Page 2-28",
+    "suggestedLevel": 4
+  },
+  {
+    "id": "TASK-053",
+    "title": "Match transmission line impedance to antenna load",
+    "description": "Select and connect transmission lines that match the characteristic impedance of the load to ensure maximum energy transfer and minimize reflections.",
+    "sourceRef": "MCRP 6-22D, Page 3-5",
+    "suggestedLevel": 4
+  },
+  {
+    "id": "TASK-054",
+    "title": "Match transmission line impedance by length",
+    "description": "Calculate and cut a transmission line to specific wavelength intervals (half-wavelength) to match antenna to transceiver when impedances differ significantly.",
+    "sourceRef": "MCRP 3-40.3C, Page 3-6",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-055",
+    "title": "Match an end-fed long-wire antenna",
+    "description": "Feed a long-wire antenna using a quarter-wavelength section of wire to achieve an impedance match between the transmitter and the antenna.",
+    "sourceRef": "MCRP 3-40.3C, Page 3-6",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-056",
+    "title": "Connect a balanced antenna to coaxial cable",
+    "description": "Route coaxial cable perpendicular to dipole wires for a distance greater than one-half the dipole length and verify total cable length to prevent unwanted RF induction.",
+    "sourceRef": "MCRP 3-40.3C, Page 3-8",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-057",
+    "title": "Connect an unbalanced antenna to twin-lead",
+    "description": "Identify and connect the hot and ground terminals of a transmitter to the corresponding conductors of a twin-lead line to feed an unbalanced antenna.",
+    "sourceRef": "MCRP 3-40.3C, Page 3-8",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-058",
+    "title": "Reduce twin-lead transmission line radiation",
+    "description": "Twist twin-lead transmission line into a helix with approximately one twist every 30 centimeters to prevent radiation and reduce noise pickup.",
+    "sourceRef": "MCRP 3-40.3C, Page 3-9",
+    "suggestedLevel": 2
+  },
+  {
+    "id": "TASK-059",
+    "title": "Install transmission line connectors",
+    "description": "Prepare cable ends and solder fittings onto standard transmission lines to facilitate rapid assembly and disassembly of communications systems.",
+    "sourceRef": "MCRP 3-40.3C, Page 3-11",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-060",
+    "title": "Employ a balun in an antenna system",
+    "description": "Install a field-constructed or manufactured balun at the antenna or transceiver to transform energy between balanced and unbalanced devices.",
+    "sourceRef": "MCRP 3-40.3C, Page 3-11",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-061",
+    "title": "Select an HF antenna site",
+    "description": "Identify an antenna location that avoids scattering objects and maintains an optimum height of approximately 0.4 wavelength above electrical ground.",
+    "sourceRef": "MCRP 3-40.3C, Page 4-2",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-062",
+    "title": "Determine HF antenna take-off angles",
+    "description": "Calculate the required take-off angle for sky wave propagation based on circuit distance and time of day using standardized propagation tables.",
+    "sourceRef": "MCRP 3-40.3C, Page 4-2",
+    "suggestedLevel": 4
+  },
+  {
+    "id": "TASK-063",
+    "title": "Select an HF antenna based on propagation mode",
+    "description": "Choose between vertically polarized antennas for ground wave or high-gain directional antennas for sky wave based on mission requirements and circuit distance.",
+    "sourceRef": "MCRP 3-40.3C, Page 4-2",
+    "suggestedLevel": 4
+  },
+  {
+    "id": "TASK-064",
+    "title": "Determine antenna coverage requirements",
+    "description": "Analyze the radio circuit type (mobile/vehicular vs. point-to-point) to identify the required radiation pattern (omnidirectional, bidirectional, or directional).",
+    "sourceRef": "MCRP 3-40.3C, Page 4-3",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-065",
+    "title": "Determine antenna take-off angle",
+    "description": "Calculate the required take-off angle based on distance and time of day (Daytime vs. Nighttime F2 Region) using Table 4-1.",
+    "sourceRef": "MCRP 3-40.3C, Page 4-3, Table 4-1",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-066",
+    "title": "Inventory antenna construction materials",
+    "description": "Examine and verify the availability of necessary construction materials, such as supports and wire, prior to antenna selection.",
+    "sourceRef": "MCRP 3-40.3C, Page 4-3",
+    "suggestedLevel": 2
+  },
+  {
+    "id": "TASK-067",
+    "title": "Determine support requirements for a horizontal dipole",
+    "description": "Identify the number of supports required for a horizontal dipole based on the operating frequency (e.g., requiring a third center support for frequencies of 5 MHz or less).",
+    "sourceRef": "MCRP 3-40.3C, Page 4-3",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-068",
+    "title": "Perform antenna site survey",
+    "description": "Examine the proposed antenna site to ensure the physical dimensions of the selected antenna will fit within the available space.",
+    "sourceRef": "MCRP 3-40.3C, Page 4-3",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-069",
+    "title": "Calculate antenna length for field-expedient antennas",
+    "description": "Determine the physical length of antenna elements in feet based on the operating frequency using the standard formula (468 / Frequency in MHz for half-wave dipoles).",
+    "sourceRef": "MCRP 3-40.3C, Part 9 (Field-Expedient Antennas)",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-070",
+    "title": "Construct a field-expedient half-wave dipole antenna",
+    "description": "Assemble a horizontal antenna using wire, insulators, and a transmission line, ensuring the two elements are cut to the correct length for the assigned frequency.",
+    "sourceRef": "MCRP 3-40.3C, Part 9 (Field-Expedient Antennas)",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-071",
+    "title": "Construct a field-expedient long-wire antenna",
+    "description": "Install a wire radiator that is at least one wavelength long, supported by available structures, to provide directional gain and improved signal strength.",
+    "sourceRef": "MCRP 3-40.3C, Part 9 (Field-Expedient Antennas)",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-072",
+    "title": "Construct a field-expedient vertical whip antenna",
+    "description": "Create a vertical radiator using wire and a support structure (such as a tree or pole) to facilitate omnidirectional ground-wave communications.",
+    "sourceRef": "MCRP 3-40.3C, Part 9 (Field-Expedient Antennas)",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-073",
+    "title": "Fabricate field-expedient antenna insulators",
+    "description": "Use non-conductive materials such as plastic, glass, or dry wood to isolate antenna elements from support structures and prevent signal grounding.",
+    "sourceRef": "MCRP 3-40.3C, Part 9 (Field-Expedient Antennas)",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-074",
+    "title": "Orient a field-expedient antenna for maximum radiation",
+    "description": "Position the antenna broadside or end-on relative to the receiving station based on the specific radiation pattern of the antenna type used.",
+    "sourceRef": "MCRP 3-40.3C, Part 9 (Field-Expedient Antennas)",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-075",
+    "title": "Ground a field-expedient antenna system",
+    "description": "Establish an electrical connection to the earth using ground stakes or radial wires to improve antenna efficiency and operator safety.",
+    "sourceRef": "MCRP 3-40.3C, Part 9 (Field-Expedient Antennas)",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-076",
+    "title": "Apply the Systems Approach to Training (SAT) methodology",
+    "description": "Utilize the structured methodology for developing military training as defined in USMC standards.",
+    "sourceRef": "MCRP 3-40.3C (Part 10/19), Section 1",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-077",
+    "title": "Execute the ADDIE model for curriculum development",
+    "description": "Perform the Analysis, Design, Development, Implementation, and Evaluation phases of the training development cycle.",
+    "sourceRef": "MCRP 3-40.3C (Part 10/19), Section 2",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-078",
+    "title": "Create Training and Readiness (T&R) events",
+    "description": "Develop standardized T&R events in accordance with Marine Corps manual standards.",
+    "sourceRef": "MCRP 3-40.3C (Part 10/19), Section 4",
+    "suggestedLevel": 5
+  },
+  {
+    "id": "TASK-079",
+    "title": "Write learning objectives in Mager format",
+    "description": "Construct Terminal Learning Objectives (TLO) and Enabling Learning Objectives (ELO) using the Condition, Behavior, and Standard format.",
+    "sourceRef": "MCRP 3-40.3C (Part 10/19), Mager format section",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-080",
+    "title": "Classify learning objectives using Bloom's Taxonomy",
+    "description": "Assign cognitive level classifications to learning objectives to ensure appropriate training depth and measurable standards.",
+    "sourceRef": "MCRP 3-40.3C (Part 10/19), Bloom's Taxonomy section",
+    "suggestedLevel": 2
+  },
+  {
+    "id": "TASK-081",
+    "title": "Extract trainable tasks from source material",
+    "description": "Analyze source documentation to identify discrete, observable, job-relevant, and trainable procedures or skills.",
+    "sourceRef": "MCRP 3-40.3C (Part 10/19), Your Task section",
+    "suggestedLevel": 4
+  },
+  {
+    "id": "TASK-082",
+    "title": "Establish traceability between training artifacts",
+    "description": "Ensure a logical link exists between T&R events, TLOs, ELOs, and final performance assessments.",
+    "sourceRef": "MCRP 3-40.3C (Part 10/19), Traceability section",
+    "suggestedLevel": 4
+  },
+  {
+    "id": "TASK-083",
+    "title": "Identify Radio Frequency (RF) radiation hazards",
+    "description": "Recognize and identify potential RF radiation hazard areas based on equipment type, power output, and antenna configuration to ensure personnel safety.",
+    "sourceRef": "MCRP 3-40.3C (Part 11/19), Image 3",
+    "suggestedLevel": 2
+  },
+  {
+    "id": "TASK-084",
+    "title": "Implement RF safety precautions",
+    "description": "Establish safety perimeters, post standardized RF hazard warning signs, and maintain safe separation distances from active transmitting antennas.",
+    "sourceRef": "MCRP 3-40.3C (Part 11/19), Image 3",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-085",
+    "title": "Construct a wire antenna",
+    "description": "Measure, cut, and assemble wire elements, insulators, and feed lines to create a functional antenna system according to technical specifications.",
+    "sourceRef": "MCRP 3-40.3C (Part 11/19), Image 4",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-086",
+    "title": "Install antenna insulators",
+    "description": "Properly attach insulators to antenna wire ends and support lines to ensure electrical isolation from ground and support structures.",
+    "sourceRef": "MCRP 3-40.3C (Part 11/19), Image 4",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-087",
+    "title": "Connect an antenna feed line",
+    "description": "Attach the transmission line to the antenna driven element ensuring proper impedance matching and secure physical connection.",
+    "sourceRef": "MCRP 3-40.3C (Part 11/19), Image 4",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-088",
+    "title": "Assemble a Manpack Radio System",
+    "description": "Physically integrate the radio receiver-transmitter, battery box, handset, and antenna into a functional manpack configuration.",
+    "sourceRef": "MCRP 3-40.3C (Part 12/19), Image 5",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-089",
+    "title": "Install a Radio Antenna",
+    "description": "Attach the specified antenna to the radio's antenna connector, ensuring a secure physical and electrical connection.",
+    "sourceRef": "MCRP 3-40.3C (Part 12/19), Image 5",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-090",
+    "title": "Connect a Handset to a Radio Set",
+    "description": "Connect the H-250/U or equivalent handset to the audio/data connector on the radio's interface panel.",
+    "sourceRef": "MCRP 3-40.3C (Part 12/19), Image 5",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-091",
+    "title": "Connect a Power Source to a Radio Set",
+    "description": "Mate the battery box or external power cable to the radio set to provide electrical power for operation.",
+    "sourceRef": "MCRP 3-40.3C (Part 12/19), Image 5",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-092",
+    "title": "Operate tactical radio interface controls",
+    "description": "Utilize the keypad and display interface to navigate menus, select options, and input data into the tactical radio system.",
+    "sourceRef": "MCRP 3-40.3C (Part 13/19), Image 6",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-093",
+    "title": "Select radio frequency presets",
+    "description": "Use the 'PRE' button and directional arrows to cycle through and select programmed frequency presets as indicated on the display.",
+    "sourceRef": "MCRP 3-40.3C (Part 13/19), Image 6",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-094",
+    "title": "Adjust radio audio and squelch settings",
+    "description": "Modify the volume and squelch levels using the dedicated 'SQL' button and interface controls to ensure clear voice reception.",
+    "sourceRef": "MCRP 3-40.3C (Part 13/19), Image 6",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-095",
+    "title": "Toggle encryption modes (CT/PT)",
+    "description": "Switch the radio between Cipher Text (CT) and Plain Text (PT) modes to secure or unsecure communications based on operational requirements.",
+    "sourceRef": "MCRP 3-40.3C (Part 13/19), Image 6",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-096",
+    "title": "Transmit tactical text messages",
+    "description": "Navigate to the 'TEXT' menu option to compose, send, and read data messages via the tactical radio network.",
+    "sourceRef": "MCRP 3-40.3C (Part 13/19), Image 6",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-097",
+    "title": "Monitor GPS status and data",
+    "description": "Access the 'GPS' menu function to view current position data and satellite synchronization status.",
+    "sourceRef": "MCRP 3-40.3C (Part 13/19), Image 6",
+    "suggestedLevel": 2
+  },
+  {
+    "id": "TASK-098",
+    "title": "Configure radio system settings",
+    "description": "Access the 'SYSTEM' menu to modify device configurations, network parameters, and operational modes.",
+    "sourceRef": "MCRP 3-40.3C (Part 13/19), Image 6",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-099",
+    "title": "Initiate a radio call",
+    "description": "Use the 'CALL' button to initiate voice or data transmissions to a specific net or station.",
+    "sourceRef": "MCRP 3-40.3C (Part 13/19), Image 6",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-100",
+    "title": "Calculate antenna length for a specific frequency",
+    "description": "Determine the physical length of an antenna element using the standard formula (468/frequency in MHz for a half-wave dipole) to ensure resonance.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 7, Section: Antenna Length",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-102",
+    "title": "Construct a field-expedient inverted vee antenna",
+    "description": "Erect a wire antenna in an inverted 'V' configuration using a single central support to provide omnidirectional radiation patterns.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 7, Section: Inverted Vee",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-103",
+    "title": "Repair broken antenna wire",
+    "description": "Perform a Western Union splice or use field-expedient connectors to restore electrical continuity to a damaged antenna element.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 8, Section: Antenna Repair",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-104",
+    "title": "Improvise antenna insulators",
+    "description": "Identify and utilize non-conductive materials such as plastic, glass, or dry wood to isolate antenna elements from grounding sources.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 7, Section: Insulators",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-105",
+    "title": "Construct a field-expedient vertical antenna",
+    "description": "Utilize a vertical support and a ground-plane radial system to construct an antenna for ground-wave communication.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 7, Section: Vertical Antennas",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-106",
+    "title": "Splice coaxial cable",
+    "description": "Repair damaged transmission lines by stripping insulation, joining center conductors, and restoring the shield braid to maintain signal integrity.",
+    "sourceRef": "MCRP 3-40.3C, Chapter 8, Section: Transmission Lines",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-107",
+    "title": "Develop a Communications Plan",
+    "description": "Formulate a comprehensive plan to support command and control requirements, including the integration of various communication systems and networks.",
+    "sourceRef": "MCRP 3-40.3C (Part 15/19)",
+    "suggestedLevel": 5
+  },
+  {
+    "id": "TASK-108",
+    "title": "Determine Communication Requirements",
+    "description": "Analyze the mission and operational environment to identify specific voice, data, and video communication needs for the unit.",
+    "sourceRef": "MCRP 3-40.3C (Part 15/19)",
+    "suggestedLevel": 4
+  },
+  {
+    "id": "TASK-109",
+    "title": "Implement Communications Security (COMSEC) Measures",
+    "description": "Apply procedures and safeguards to protect telecommunications and ensure the confidentiality, integrity, and availability of information.",
+    "sourceRef": "MCRP 3-40.3C (Part 15/19)",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-110",
+    "title": "Coordinate Communications Support with External Units",
+    "description": "Liaise with higher, adjacent, and subordinate units to ensure interoperability and seamless communication across the area of operations.",
+    "sourceRef": "MCRP 3-40.3C (Part 15/19)",
+    "suggestedLevel": 4
+  },
+  {
+    "id": "TASK-111",
+    "title": "Manage Frequency Assignments",
+    "description": "Allocate and monitor radio frequencies to prevent interference and optimize the use of the electromagnetic spectrum.",
+    "sourceRef": "MCRP 3-40.3C (Part 15/19)",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-112",
+    "title": "Exercise Communications Control (COMMCON)",
+    "description": "Direct and supervise the technical operation and maintenance of the communications system to ensure it meets operational requirements.",
+    "sourceRef": "MCRP 3-40.3C (Part 15/19)",
+    "suggestedLevel": 4
+  },
+  {
+    "id": "TASK-113",
+    "title": "Maintain Communication Logs",
+    "description": "Record all significant communication events, message traffic, and system status updates in accordance with established protocols.",
+    "sourceRef": "MCRP 3-40.3C (Part 15/19)",
+    "suggestedLevel": 2
+  },
+  {
+    "id": "TASK-114",
+    "title": "Operate the radio function switch",
+    "description": "Manipulate the main function knob to switch between OFF, Cipher Text (CT), Plain Text (PT), Load (LD), and Zeroize (Z) positions.",
+    "sourceRef": "MCRP 3-40.3C, Image 8",
+    "suggestedLevel": 2
+  },
+  {
+    "id": "TASK-115",
+    "title": "Select radio waveforms from System Presets",
+    "description": "Navigate the LCD menu using the keypad to select specific waveforms including VHF/UHF LOS, SATCOM, P25, HPW, ANW2, and SRW.",
+    "sourceRef": "MCRP 3-40.3C, Image 8",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-116",
+    "title": "Adjust radio squelch settings",
+    "description": "Utilize the SQL (Squelch) key on the tactical keypad to adjust or toggle the receiver squelch threshold.",
+    "sourceRef": "MCRP 3-40.3C, Image 8",
+    "suggestedLevel": 2
+  },
+  {
+    "id": "TASK-117",
+    "title": "Manage radio display lighting",
+    "description": "Use the LT (Light) key to adjust the LCD backlight and keypad illumination for day or night operations.",
+    "sourceRef": "MCRP 3-40.3C, Image 8",
+    "suggestedLevel": 2
+  },
+  {
+    "id": "TASK-118",
+    "title": "Zeroize the radio",
+    "description": "Perform emergency or routine clearing of all COMSEC and variables by rotating the function switch to the 'Z' position.",
+    "sourceRef": "MCRP 3-40.3C, Image 8",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-119",
+    "title": "Connect radio peripherals",
+    "description": "Properly seat and secure audio handsets to the J1 connector or data cables to the J2 connector.",
+    "sourceRef": "MCRP 3-40.3C, Image 8",
+    "suggestedLevel": 2
+  },
+  {
+    "id": "TASK-120",
+    "title": "Access radio options and modes",
+    "description": "Use the OPT (Options) and MODE keys to navigate sub-menus for advanced configuration and operational mode changes.",
+    "sourceRef": "MCRP 3-40.3C, Image 8",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-121",
+    "title": "Connect Peripherals to the AN/PRC-150(C)",
+    "description": "Properly attach the antenna, handset (H-250), and power source to the respective ANT, AUDIO, and POWER connectors on the front panel.",
+    "sourceRef": "MCRP 3-40.3C, Image 9 (Front Panel Connectors)",
+    "suggestedLevel": 2
+  },
+  {
+    "id": "TASK-122",
+    "title": "Power On the AN/PRC-150(C) Radio Set",
+    "description": "Rotate the Function Switch from the OFF position to the desired operational mode, such as PT (Plain Text) or CT (Cipher Text).",
+    "sourceRef": "MCRP 3-40.3C, Image 9 (Function Switch)",
+    "suggestedLevel": 2
+  },
+  {
+    "id": "TASK-123",
+    "title": "Zeroize the AN/PRC-150(C) Radio Set",
+    "description": "Perform emergency destruction of cryptographic variables by rotating the Function Switch to the Z-ALL position.",
+    "sourceRef": "MCRP 3-40.3C, Image 9 (Function Switch)",
+    "suggestedLevel": 2
+  },
+  {
+    "id": "TASK-124",
+    "title": "Configure Radio Settings via Front Panel Keypad",
+    "description": "Utilize the alphanumeric keypad, 'PGM' (Program), and 'ENT' (Enter) keys to navigate menus and input frequency or net data into the radio memory.",
+    "sourceRef": "MCRP 3-40.3C, Image 9 (Keypad and Display)",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-125",
+    "title": "Prepare the AN/PRC-150(C) for COMSEC Loading",
+    "description": "Set the Function Switch to the LD (Load) position to enable the transfer of cryptographic keys from a fill device via the AUDIO/DATA ports.",
+    "sourceRef": "MCRP 3-40.3C, Image 9 (Function Switch)",
+    "suggestedLevel": 2
+  },
+  {
+    "id": "TASK-126",
+    "title": "Ground the AN/PRC-150(C) Radio Set",
+    "description": "Connect a tactical ground wire to the GND terminal on the radio chassis to ensure operator safety and equipment protection.",
+    "sourceRef": "MCRP 3-40.3C, Image 9 (Connectors and Controls)",
+    "suggestedLevel": 2
+  },
+  {
+    "id": "TASK-127",
+    "title": "Perform Preventive Maintenance Checks and Services (PMCS) on Radio Equipment",
+    "description": "Inspect the radio chassis, connectors, and accessories for physical damage, corrosion, and cleanliness to ensure operational readiness.",
+    "sourceRef": "MCRP 3-40.3C, Maintenance Section",
+    "suggestedLevel": 2
+  },
+  {
+    "id": "TASK-128",
+    "title": "Install Radio Batteries",
+    "description": "Properly align, seat, and secure the battery pack to the radio receiver-transmitter to provide power for operations.",
+    "sourceRef": "MCRP 3-40.3C, Power Supply Section",
+    "suggestedLevel": 2
+  },
+  {
+    "id": "TASK-129",
+    "title": "Connect Radio Antennas",
+    "description": "Attach the appropriate antenna (whip, blade, or external) to the RF connector and ensure a secure physical connection for signal transmission.",
+    "sourceRef": "MCRP 3-40.3C, Equipment Setup",
+    "suggestedLevel": 2
+  },
+  {
+    "id": "TASK-130",
+    "title": "Operate Radio Controls and Indicators",
+    "description": "Navigate the radio interface using the keypad and display to monitor status and adjust basic operating parameters.",
+    "sourceRef": "MCRP 3-40.3C, Basic Operation",
+    "suggestedLevel": 3
+  },
+  {
+    "id": "TASK-131",
+    "title": "Clean Radio Connectors and Ports",
+    "description": "Use approved cleaning materials to remove dirt and debris from electrical contact points to prevent signal degradation.",
+    "sourceRef": "MCRP 3-40.3C, Maintenance Procedures",
+    "suggestedLevel": 2
+  },
+  {
+    "id": "TASK-132",
+    "title": "Assemble a Manpack Radio Configuration",
+    "description": "Integrate the receiver-transmitter, battery box, and antenna into a single man-portable unit ready for tactical employment.",
+    "sourceRef": "MCRP 3-40.3C, Configuration Section",
+    "suggestedLevel": 3
+  }
+]

@@ -1,0 +1,2240 @@
+[
+  {
+    "id": "0621-ANT-0001",
+    "title": "Categorize Radio Frequencies by Band",
+    "condition": "Given a list of tactical frequencies and MCRP 3-40.3C.",
+    "standard": "Categorize each frequency into the correct military radio frequency band (HF, VHF, or UHF) without error per Figure 1-1.",
+    "performanceSteps": [
+      "Identify frequencies between 3 MHz and 30 MHz as High Frequency (HF).",
+      "Identify frequencies between 30 MHz and 300 MHz as Very High Frequency (VHF).",
+      "Identify frequencies between 300 MHz and 3 GHz as Ultra High Frequency (UHF)."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 1-3, Figure 1-1",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0002",
+    "title": "Calculate Radio Wavelength",
+    "condition": "Given a specific operating frequency, the constant for the speed of light, and MCRP 3-40.3C.",
+    "standard": "Calculate the wavelength (λ) in meters to determine antenna length requirements with 100% accuracy.",
+    "performanceSteps": [
+      "Identify the assigned operating frequency (f).",
+      "Identify the velocity of electromagnetic radiation (v) as 300,000,000 meters per second.",
+      "Apply the wavelength formula where wavelength equals velocity divided by frequency (λ = v/f).",
+      "Express the final wavelength result in meters."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 1-2",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0003",
+    "title": "Identify Radio Wave Propagation Components",
+    "condition": "Given a tactical radio system and MCRP 3-40.3C.",
+    "standard": "Identify the characteristics of radio wave propagation to ensure optimal antenna placement.",
+    "performanceSteps": [
+      "Identify the two components of a radio wave (crest and trough).",
+      "Define the wavelength as the distance between successive wave crests.",
+      "Determine if the radio wave is propagating as a ground wave (near Earth's surface) or sky wave (radiating skyward).",
+      "Identify potential interference factors including natural and manmade noise."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 1-2, 1-23",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0004",
+    "title": "Convert Frequency Units",
+    "condition": "Given a frequency value and MCRP 3-40.3C.",
+    "standard": "Convert the frequency value between Hertz (Hz), Kilohertz (kHz), Megahertz (MHz), and Gigahertz (GHz) without error.",
+    "performanceSteps": [
+      "Identify the base unit (1 Hz = 1 cycle per second).",
+      "Convert to Kilohertz (kHz) by a factor of 1,000.",
+      "Convert to Megahertz (MHz) by a factor of 1,000,000.",
+      "Convert to Gigahertz (GHz) by a factor of 1,000,000,000."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 1-3",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0005",
+    "title": "Calculate Antenna Physical Length",
+    "condition": "Given a target frequency, a calculator, and reference material.",
+    "standard": "Calculate the physical length of a half-wave or quarter-wave antenna to within 1 percent of the mathematical requirement to ensure resonance at the assigned frequency per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Identify the assigned operating frequency.",
+      "Select the appropriate formula for the antenna type (Half-wave or Quarter-wave).",
+      "Calculate the length in feet using the constant 468 (for half-wave) or 234 (for quarter-wave) divided by the frequency in MHz.",
+      "Convert the decimal result into feet and inches.",
+      "Account for 'end effect' or velocity factor if specific wire types are identified."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Section III, Page 2-24",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0006",
+    "title": "Construct a Field Expedient Center-Fed Doublet Antenna",
+    "condition": "Given a radio, transmission line, antenna wire, insulators, support structures, and a target frequency.",
+    "standard": "Construct and employ the antenna such that a radio link is established with a distant station at the assigned frequency per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Calculate the required length for each leg of the doublet (quarter-wave each).",
+      "Cut two equal lengths of antenna wire.",
+      "Attach the wire legs to a center insulator.",
+      "Connect the transmission line (coaxial or WD-1/TT) to the center insulator.",
+      "Attach end insulators to the wire legs.",
+      "Hoist the antenna using supports (masts or trees) to the required height.",
+      "Connect the transmission line to the radio set.",
+      "Verify the radio link with the distant station."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Chapter 6, Page 6-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0007",
+    "title": "Install an Antenna Grounding System",
+    "condition": "Given an antenna system, ground rods, counterpoise wire, and hand tools.",
+    "standard": "Install a grounding system (counterpoise or ground screen) to improve radiation efficiency and ensure operator safety per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Determine the type of ground required (Ground rod, Counterpoise, or Ground Screen).",
+      "Drive ground rods into the earth at the base of the antenna.",
+      "Lay out counterpoise radials in a star or circular pattern if soil conductivity is poor.",
+      "Ensure all connections between the ground system and the radio/antenna are tight and free of corrosion.",
+      "Verify the ground system does not create a trip hazard for personnel."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Section II, Page 2-19",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0008",
+    "title": "Orient an Antenna for Directionality",
+    "condition": "Given an erected directional antenna, a compass, and the location of a distant station.",
+    "standard": "Orient the antenna on the correct azimuth to maximize signal gain and achieve a reliable radio link per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Determine the grid azimuth to the distant station using a map.",
+      "Convert the grid azimuth to a magnetic azimuth.",
+      "Identify the antenna's radiation pattern (bidirectional or unidirectional).",
+      "Align the major lobe of the antenna's radiation pattern with the calculated azimuth.",
+      "Adjust the take-off angle if required for sky wave propagation.",
+      "Perform a radio check to confirm maximum signal strength."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Section IV, Page 2-26",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0009",
+    "title": "Perform Field Repair of Wire Antennas",
+    "condition": "Given a damaged wire antenna system and a field repair kit.",
+    "standard": "Restore electrical continuity and structural integrity to the antenna to enable communications per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Identify the location of the break or damage in the wire.",
+      "Strip the insulation from the broken ends of the wire.",
+      "Join the wires using a Western Union splice or a similar high-strength mechanical connection.",
+      "Solder the connection if equipment is available, or wrap with electrical tape to prevent corrosion.",
+      "Re-tension the antenna wire to ensure it is clear of the ground and obstructions.",
+      "Test the repaired antenna for continuity and resonance."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Chapter 6, Page 6-2",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0010",
+    "title": "Calculate Antenna Length",
+    "condition": "Given an operating frequency, a calculator, and writing materials.",
+    "standard": "Calculate the physical length of a radio antenna to support the assigned frequency to within 1% accuracy using the formulas provided in MCRP 6-22D.",
+    "performanceSteps": [
+      "Identify the assigned operating frequency.",
+      "Determine the required antenna type (e.g., half-wave dipole or quarter-wave whip).",
+      "Apply the appropriate constant for the unit of measure (feet or meters).",
+      "Divide the constant by the frequency to determine the physical length.",
+      "Verify the calculated length against the frequency band (HF, VHF, or UHF)."
+    ],
+    "sourceRef": "MCRP 6-22D, Chapter 2, Section III",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0011",
+    "title": "Select an Antenna Site",
+    "condition": "Given a tactical mission, a frequency band (HF, VHF, or UHF), and a designated area of operations.",
+    "standard": "Select a site that optimizes signal propagation and minimizes interference based on the technical and tactical considerations in MCRP 6-22D.",
+    "performanceSteps": [
+      "Analyze the frequency band requirements (Line of Sight for VHF/UHF vs. Ground/Sky wave for HF).",
+      "Evaluate terrain for elevation and obstacles.",
+      "Identify potential sources of manmade noise (power lines, engines).",
+      "Identify potential sources of natural noise.",
+      "Assess ground conductivity for HF operations.",
+      "Ensure tactical concealment and doctrinal considerations are met."
+    ],
+    "sourceRef": "MCRP 6-22D, Chapter 8, Location Selection Considerations",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0012",
+    "title": "Determine Antenna Orientation",
+    "condition": "Given a distant station location, an antenna, and a compass.",
+    "standard": "Orient the antenna's radiation pattern to achieve maximum signal gain toward the distant station per MCRP 6-22D.",
+    "performanceSteps": [
+      "Determine the azimuth to the distant station.",
+      "Identify the antenna's radiation pattern (directional, bidirectional, or omnidirectional).",
+      "Align the antenna's primary lobe with the target azimuth.",
+      "Select the appropriate polarization (vertical or horizontal) based on the circuit requirement.",
+      "Adjust the take-off angle if required for the distance."
+    ],
+    "sourceRef": "MCRP 6-22D, Chapter 2, Section IV",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0013",
+    "title": "Construct an Antenna Ground System",
+    "condition": "Given a radio set, an antenna, and a ground/counterpoise kit or field-expedient wire.",
+    "standard": "Install a ground or counterpoise system to improve antenna resonance and efficiency in accordance with MCRP 6-22D.",
+    "performanceSteps": [
+      "Evaluate the existing ground conductivity.",
+      "Determine the requirement for a counterpoise or ground screen.",
+      "Lay out radial wires at the base of the antenna.",
+      "Connect the ground system to the radio or antenna base terminal.",
+      "Ensure all connections are secure and provide low resistance."
+    ],
+    "sourceRef": "MCRP 6-22D, Chapter 2, Section II",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0014",
+    "title": "Establish an Antenna Farm",
+    "condition": "Given multiple radio systems, various antenna types, and a designated Command Post (CP) location.",
+    "standard": "Layout the antenna farm to minimize co-site interference and maximize communication effectiveness per the layout principles in MCRP 6-22D.",
+    "performanceSteps": [
+      "Identify the frequency bands of all active nets.",
+      "Determine the polarization requirements for each antenna.",
+      "Calculate the minimum separation distance between antennas to prevent interference.",
+      "Route power and signal lines to minimize cross-talk and tripping hazards.",
+      "Position antennas based on directionality and radiation patterns."
+    ],
+    "sourceRef": "MCRP 6-22D, Chapter 8, Antenna Farm Layout Principles",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0015",
+    "title": "Perform Radio Frequency Unit Conversions",
+    "condition": "Given a requirement to configure a radio system and a specific frequency expressed in Hertz (Hz), Kilohertz (kHz), Megahertz (MHz), or Gigahertz (GHz).",
+    "standard": "Convert the frequency to the required unit of measure with 100% accuracy to ensure proper equipment programming per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Identify the current unit of frequency measurement.",
+      "Determine the target unit of frequency measurement required for the radio system.",
+      "Apply the conversion factor (1,000 for kHz, 1,000,000 for MHz, 1,000,000,000 for GHz).",
+      "Calculate the numerical value for the target unit.",
+      "Verify the calculation against the electromagnetic spectrum chart."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 1-3",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0016",
+    "title": "Calculate Antenna Length",
+    "condition": "Given an assigned operating frequency, a specific antenna type (half-wave or quarter-wave), and MCRP 3-40.3C.",
+    "standard": "Calculate the physical length of the antenna required for resonance at the assigned frequency within +/- 1 inch of the mathematical requirement.",
+    "performanceSteps": [
+      "Identify the assigned operating frequency.",
+      "Select the appropriate formula for the antenna type (half-wave or quarter-wave).",
+      "Calculate the wavelength based on the speed of light (300 million meters per second).",
+      "Determine the physical length in feet or meters.",
+      "Account for velocity factor if applicable to the specific wire type."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Chapter 2, Section III",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0017",
+    "title": "Orient an Antenna for Directional Transmission",
+    "condition": "Given a tactical radio, a directional antenna, a lensatic compass, and the location of a distant station.",
+    "standard": "Orient the antenna on the correct azimuth to achieve maximum signal strength and establish a reliable communication link per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Determine the azimuth to the distant station using a map or provided coordinates.",
+      "Identify the antenna's radiation pattern (directionality).",
+      "Determine the required polarization (vertical or horizontal) based on the distant station's configuration.",
+      "Align the antenna's primary lobe toward the distant station using a lensatic compass.",
+      "Adjust the take-off angle if required for atmospheric conditions.",
+      "Perform a radio check to verify signal strength."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Chapter 2, Section IV",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0018",
+    "title": "Construct an Antenna Grounding System",
+    "condition": "Given an antenna system, a grounding kit or field-expedient materials, and a designated site.",
+    "standard": "Install a ground or counterpoise system to ensure antenna resonance and operator safety per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Assess the soil conductivity at the antenna site.",
+      "Select the appropriate grounding method (ground rod, counterpoise, or ground screen).",
+      "Drive the ground rod into the earth or deploy counterpoise radials in a symmetrical pattern.",
+      "Connect the ground lead to the antenna's ground terminal.",
+      "Ensure all connections are tight and free of corrosion.",
+      "Verify the reduction of stray RF and improvement in signal stability."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Chapter 2, Section II",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0019",
+    "title": "Assemble an OE-254 Antenna",
+    "condition": "Given an OE-254 antenna kit, a designated site, and a requirement to establish VHF communications.",
+    "standard": "To ensure the antenna is assembled and erected according to technical specifications, providing maximum gain and directivity for the assigned frequency, per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Inventory all OE-254 components for completeness and serviceability.",
+      "Assemble the mast sections to the required height.",
+      "Attach the radiator elements to the antenna head.",
+      "Connect the transmission line (coaxial cable) to the antenna base.",
+      "Erect the antenna mast using the base plate and guy ropes.",
+      "Secure the guy lines to stakes at the appropriate distance to ensure stability.",
+      "Verify vertical polarization and clear line-of-sight where possible."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 5-10",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0020",
+    "title": "Select VHF/UHF Antennas Based on Environmental Factors",
+    "condition": "Given a mission requirement, a specific frequency range (VHF/UHF), and a tactical environment (e.g., vegetated area, vehicle interior).",
+    "standard": "Select the antenna type that maximizes signal strength and minimizes interference (multipath or noise) according to the characteristics of the operating area.",
+    "performanceSteps": [
+      "Identify the required frequency range (VHF or UHF).",
+      "Determine the required polarization (Vertical or Horizontal).",
+      "Analyze the environment for potential interference (e.g., vegetated areas, multipath interference).",
+      "Select the appropriate radiator type (Vertical Whip, OE-254, or Cross Section Radiator).",
+      "Determine if a dual-function antenna is required for simultaneous VHF/UHF operations.",
+      "Position the antenna to mitigate noise and interference from nearby sources."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Pages 5-1 through 5-12",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0021",
+    "title": "Establish HF Sky Wave Communications",
+    "condition": "Given an HF radio set, a distant station, and ionospheric data (MUF/LUF).",
+    "standard": "Establish a reliable communication link by selecting a frequency between the Maximum Usable Frequency (MUF) and Lowest Useful Frequency (LUF) and adjusting the antenna for the correct angle of incidence.",
+    "performanceSteps": [
+      "Determine the MUF and LUF for the intended transmission path and time of day.",
+      "Select an operating frequency that is below the MUF but above the LUF to ensure reflection and override noise.",
+      "Calculate the required skip distance based on the receiver location.",
+      "Adjust the antenna height to control the angle of incidence (lower height for NVIS/higher angle; higher height for long-distance/lower angle).",
+      "Monitor for fading (periodic signal strength changes) and adjust frequency or antenna orientation if necessary.",
+      "Account for irregular ionospheric variations (Sporadic E, SID, or Ionospheric Storms) during link maintenance."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Pages 1-14 through 1-17",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0022",
+    "title": "Orient Directional Antennas to Mitigate Interference",
+    "condition": "Given a horizontal half-wave antenna, a desired signal source, and an identified interfering station.",
+    "standard": "Orient the antenna to maximize the signal-to-noise ratio by placing the interfering source in the antenna's null and the desired source in the antenna's broadside.",
+    "performanceSteps": [
+      "Identify the direction of the desired signal source.",
+      "Identify the direction of the interfering signal or noise source.",
+      "Position the horizontal half-wave antenna so the broadside (perpendicular to the wire) faces the desired station.",
+      "Rotate the antenna so that the ends (nulls) point toward the interfering station.",
+      "Verify the reduction of interference and the clarity of the desired signal.",
+      "Adjust antenna height to further refine the radiation pattern if interference persists."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 2-11",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0023",
+    "title": "Calculate Antenna Length",
+    "condition": "Given a specific operating frequency, a calculator, and reference material.",
+    "standard": "Determine the physical length of the antenna wire to within one inch of the mathematical requirement based on the formula for a half-wave or quarter-wave antenna.",
+    "performanceSteps": [
+      "Identify the assigned operating frequency.",
+      "Select the appropriate formula for the antenna type (e.g., 468 / frequency in MHz for half-wave).",
+      "Calculate the physical length of the radiating element.",
+      "Calculate the length of the counterpoise or ground radials if required.",
+      "Measure the wire to the calculated length."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Section III, Page 2-24",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0024",
+    "title": "Construct an Antenna Grounding System",
+    "condition": "Given a radio set, antenna, grounding rod, and counterpoise or ground screen materials.",
+    "standard": "Establish a low-resistance path to earth to improve radiation efficiency and ensure operator safety.",
+    "performanceSteps": [
+      "Select a site with moist soil if available to improve conductivity.",
+      "Drive the ground rod into the earth at a 90-degree angle.",
+      "Connect the equipment ground terminal to the ground rod using a low-impedance conductor.",
+      "Deploy counterpoise radials or a ground screen in a star or grid pattern if soil conductivity is poor.",
+      "Ensure all connections are tight and free of corrosion."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Section II, Page 2-19",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0025",
+    "title": "Orient an Antenna for Maximum Signal Strength",
+    "condition": "Given a directional antenna, a compass, and the grid coordinates of a distant station.",
+    "standard": "Align the antenna's major radiation lobe with the distant station's azimuth within +/- 5 degrees.",
+    "performanceSteps": [
+      "Determine the grid azimuth to the distant station.",
+      "Convert the grid azimuth to a magnetic azimuth using the G-M angle.",
+      "Identify the antenna's radiation pattern (directional or bi-directional).",
+      "Physically align the antenna's radiating element or boom toward the distant station using a compass.",
+      "Verify signal strength with the distant station and adjust for maximum gain."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Section IV, Page 2-26",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0026",
+    "title": "Construct an AS-2259/GR Antenna",
+    "condition": "Given an AS-2259/GR antenna kit and a designated site.",
+    "standard": "Assemble and erect the antenna to support Near Vertical Incidence Skywave (NVIS) communications.",
+    "performanceSteps": [
+      "Inventory all antenna components (mast sections, radiating elements, base).",
+      "Assemble the mast sections to the required height.",
+      "Attach the radiating elements and guy lines to the top of the mast.",
+      "Erect the mast and secure it using the guy lines and stakes.",
+      "Connect the RF cable to the radio and the antenna feed point.",
+      "Verify the VSWR (Voltage Standing Wave Ratio) is within acceptable limits."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Chapter 4, Page 4-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0027",
+    "title": "Construct an OE-254 Antenna",
+    "condition": "Given an OE-254 antenna kit and a designated site.",
+    "standard": "Assemble and erect the antenna to support VHF line-of-sight communications.",
+    "performanceSteps": [
+      "Inventory all components including the feed cone, elements, and mast sections.",
+      "Assemble the feed cone and attach the radiating elements.",
+      "Assemble the mast sections and attach the feed cone assembly to the top.",
+      "Erect the mast while maintaining tension on the guy ropes.",
+      "Secure the guy ropes to the stakes at 120-degree intervals.",
+      "Connect the RF cable to the antenna and the radio set."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Chapter 5, Page 5-10",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0028",
+    "title": "Site an Antenna Farm",
+    "condition": "Given a mission, a list of communication nets, and a tactical area of responsibility.",
+    "standard": "Select and layout an antenna site that minimizes mutual interference and maximizes signal propagation.",
+    "performanceSteps": [
+      "Analyze the terrain for elevation and clear lines of sight.",
+      "Determine the required separation distance between antennas to prevent cosite interference.",
+      "Identify the polarization requirements (vertical or horizontal) for each net.",
+      "Layout antenna positions based on frequency band and directionality.",
+      "Plan the routing of power and signal lines to prevent tripping hazards and interference.",
+      "Ensure the site meets tactical concealment and security requirements."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Chapter 8, Page 8-2",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0029",
+    "title": "Calculate Antenna Length",
+    "condition": "Given a specific operating frequency, a calculator, and writing materials.",
+    "standard": "Calculate the physical length of a half-wave dipole or quarter-wave vertical antenna to within +/- 1 inch of the mathematical requirement based on the formula provided in the reference.",
+    "performanceSteps": [
+      "Identify the operating frequency in Megahertz (MHz).",
+      "Select the appropriate formula for the antenna type (e.g., 468 / frequency for a half-wave dipole in feet).",
+      "Perform the mathematical calculation to determine total length.",
+      "Divide the total length by two for individual dipole elements if required.",
+      "Convert decimal feet to inches for physical measurement."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Section III, Page 2-24",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0030",
+    "title": "Construct a Half-Wave Dipole Antenna",
+    "condition": "Given a radio, transmission line (coaxial cable), antenna wire, insulators, and a calculated frequency.",
+    "standard": "Construct and employ the antenna so that it is resonant at the assigned frequency and capable of establishing communications with a distant station.",
+    "performanceSteps": [
+      "Measure and cut two equal lengths of antenna wire based on the calculated frequency.",
+      "Attach the wire elements to a center insulator.",
+      "Connect the transmission line (coaxial cable) to the center insulator.",
+      "Attach end insulators to the wire elements.",
+      "Secure the antenna to supports (trees or poles) at the required height and orientation.",
+      "Connect the transmission line to the radio equipment.",
+      "Perform a radio check to verify signal strength."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Chapter 4, Page 4-14",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0031",
+    "title": "Employ AS-2259/GR Antenna",
+    "condition": "Given an AS-2259/GR antenna kit, an HF radio, and a designated site.",
+    "standard": "Assemble and erect the antenna to support Near Vertical Incidence Skywave (NVIS) communications as per the technical manual.",
+    "performanceSteps": [
+      "Inventory all antenna components (mast sections, top cap, radiators, stakes).",
+      "Assemble the mast sections on the base plate.",
+      "Attach the top cap and the four wire radiators.",
+      "Erect the mast while deploying the radiators as guy wires.",
+      "Secure the radiators to the ground using stakes at 90-degree intervals.",
+      "Connect the RF cable to the radio.",
+      "Tune the radio to the assigned frequency."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Chapter 4, Page 4-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0032",
+    "title": "Employ OE-254 Antenna",
+    "condition": "Given an OE-254 antenna kit, a VHF radio, and a designated site.",
+    "standard": "Assemble and erect the antenna to its full height (30 feet) to establish VHF line-of-sight communications.",
+    "performanceSteps": [
+      "Inventory the OE-254 kit components.",
+      "Assemble the antenna head (radiating elements).",
+      "Connect the RF cable to the antenna head.",
+      "Assemble the mast sections.",
+      "Attach the antenna head to the top mast section.",
+      "Attach guy ropes to the mast at the designated points.",
+      "Raise the mast and secure guy ropes to ground stakes.",
+      "Connect the RF cable to the VHF radio."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Chapter 5, Page 5-10",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0033",
+    "title": "Construct an Antenna Ground System",
+    "condition": "Given a vertical whip antenna, ground stakes, and copper wire (counterpoise).",
+    "standard": "Install a ground screen or counterpoise to improve the radiation efficiency of the antenna system.",
+    "performanceSteps": [
+      "Identify the soil type to determine ground conductivity.",
+      "Drive a ground rod into the earth near the antenna base.",
+      "Lay out radial wires (counterpoise) extending from the antenna base.",
+      "Ensure radials are at least 1/4 wavelength of the operating frequency.",
+      "Connect all radials and the ground rod to the radio's ground terminal or antenna base.",
+      "Verify the reduction in ground resistance or improvement in signal."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Section II, Page 2-19",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0034",
+    "title": "Orient Antenna for Maximum Signal Strength",
+    "condition": "Given an erected directional antenna and a distant station's location.",
+    "standard": "Orient the antenna's major lobe toward the receiving station to achieve maximum gain.",
+    "performanceSteps": [
+      "Determine the azimuth to the distant station using a map and compass.",
+      "Identify the radiation pattern (polarization and directionality) of the specific antenna in use.",
+      "Physically rotate or adjust the antenna elements to align with the determined azimuth.",
+      "Adjust the take-off angle if using an HF antenna for skywave propagation.",
+      "Coordinate with the distant station to confirm peak signal strength."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Section IV, Page 2-26",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0035",
+    "title": "Select an HF Antenna",
+    "condition": "Given a mission requirement, a specific frequency, a distance to the distant station, and MCRP 6-22D.",
+    "standard": "Select the antenna type that optimizes gain and propagation (Groundwave, Skywave, or NVIS) for the required distance and frequency in accordance with MCRP 6-22D Chapter 4.",
+    "performanceSteps": [
+      "Determine the distance to the distant station.",
+      "Identify the required propagation mode (NVIS, Long-range Skywave, or Groundwave).",
+      "Determine the required antenna gain based on mission requirements.",
+      "Evaluate site constraints (available space, terrain, and vegetation).",
+      "Select the appropriate HF antenna (e.g., AS-2259/GR, Half-Wave Dipole, Inverted Vee, or Long Wire) based on the selection procedure in MCRP 6-22D."
+    ],
+    "sourceRef": "MCRP 6-22D, Page 4-2 to 4-8",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0036",
+    "title": "Install an AS-2259/GR Antenna",
+    "condition": "Given an AS-2259/GR antenna kit, an HF radio set, and MCRP 6-22D.",
+    "standard": "Assemble and erect the antenna to provide Near Vertical Incidence Skywave (NVIS) communications, ensuring all connections are secure and the mast is stable, per MCRP 6-22D Section 4-9.",
+    "performanceSteps": [
+      "Inventory all antenna components.",
+      "Assemble the mast sections to the required height.",
+      "Attach the radiating elements and top assembly.",
+      "Secure the guy lines and anchors to stabilize the mast.",
+      "Connect the transmission line to the antenna base and the radio set.",
+      "Verify the antenna is configured for NVIS propagation."
+    ],
+    "sourceRef": "MCRP 6-22D, Page 4-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0037",
+    "title": "Install an OE-254 Antenna",
+    "condition": "Given an OE-254 antenna kit, a VHF radio set, and MCRP 6-22D.",
+    "standard": "Assemble and erect the antenna to provide VHF line-of-sight communications, ensuring the mast is vertical and guy lines are tensioned, per MCRP 6-22D Section 5-10.",
+    "performanceSteps": [
+      "Inventory all OE-254 components.",
+      "Assemble the mast sections on the ground.",
+      "Attach the feed cone and radiating elements.",
+      "Connect the coaxial transmission line to the feed cone.",
+      "Erect the mast assembly to a vertical position.",
+      "Secure guy ropes to stakes at 120-degree intervals.",
+      "Connect the coaxial cable to the radio set."
+    ],
+    "sourceRef": "MCRP 6-22D, Page 5-10",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0038",
+    "title": "Site an Antenna Farm",
+    "condition": "Given a tactical scenario, multiple radio systems (HF, VHF, UHF), and MCRP 6-22D.",
+    "standard": "Determine the optimal placement for multiple antennas to minimize interference and maximize signal effectiveness based on tactical and technical considerations in MCRP 6-22D Chapter 8.",
+    "performanceSteps": [
+      "Identify the command post type (Tactical, Main, or Rear).",
+      "Evaluate tactical considerations (concealment, security, and accessibility).",
+      "Evaluate technical considerations (terrain, soil conductivity, and man-made interference).",
+      "Determine the internal arrangement based on frequency bands to prevent co-site interference.",
+      "Select antenna polarization (vertical or horizontal) based on the net requirements.",
+      "Plan the layout of power and signal lines to avoid interference and tripping hazards.",
+      "Establish separation distances between transmitting and receiving antennas."
+    ],
+    "sourceRef": "MCRP 6-22D, Page 8-2 to 8-16",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0039",
+    "title": "Construct a Half-Wave Dipole Antenna",
+    "condition": "Given a frequency, wire, insulators, a transmission line, and MCRP 6-22D.",
+    "standard": "Calculate the required length and construct the antenna to support HF communications for the assigned frequency per MCRP 6-22D Section 4-14.",
+    "performanceSteps": [
+      "Calculate the length of the half-wave radiator using the formula (468 / Frequency in MHz).",
+      "Cut the wire into two equal quarter-wave sections.",
+      "Attach the wire sections to the center insulator.",
+      "Attach end insulators to the wire sections.",
+      "Connect the transmission line (coaxial or balanced) to the center insulator.",
+      "Measure and adjust the antenna height and orientation for the desired propagation."
+    ],
+    "sourceRef": "MCRP 6-22D, Page 4-14",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0040",
+    "title": "Calculate Antenna Length",
+    "condition": "Given a specific operating frequency and a requirement to construct a wire antenna.",
+    "standard": "Calculate the physical length of the antenna elements to within 1% of the theoretical requirement based on the formula provided in the reference.",
+    "performanceSteps": [
+      "Identify the target operating frequency.",
+      "Select the appropriate formula for the antenna type (e.g., half-wave or quarter-wave).",
+      "Calculate the length in feet or meters.",
+      "Adjust for velocity factor if applicable.",
+      "Verify the calculated length against the frequency band limits."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Section III, Page 2-24",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0041",
+    "title": "Install an AS-2259/GR Antenna",
+    "condition": "Given an AS-2259/GR antenna kit, a designated site, and a requirement to establish Near Vertical Incidence Skywave (NVIS) communications.",
+    "standard": "Assemble and erect the antenna so that it is structurally sound and provides a signal capable of supporting communications, in accordance with the technical manual.",
+    "performanceSteps": [
+      "Inventory all antenna components.",
+      "Assemble the mast sections.",
+      "Attach the top and bottom radiator elements.",
+      "Secure the guy ropes and stakes.",
+      "Connect the transmission line to the radio set.",
+      "Verify the antenna is oriented for NVIS propagation."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Chapter 4, Page 4-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0042",
+    "title": "Install an OE-254 Antenna",
+    "condition": "Given an OE-254 antenna kit and a requirement to provide VHF line-of-sight communications.",
+    "standard": "Erect the antenna to its full height and secure it to withstand environmental conditions while maintaining a clear line of sight to the receiving station.",
+    "performanceSteps": [
+      "Assemble the antenna base and radiator elements.",
+      "Connect the RF cable to the base assembly.",
+      "Raise the mast sections sequentially.",
+      "Deploy and secure guy wires at the appropriate intervals.",
+      "Ensure the antenna is vertically polarized.",
+      "Perform a radio check to verify operation."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Chapter 5, Page 5-10",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0043",
+    "title": "Construct a Field Expedient Wire Antenna",
+    "condition": "Given field wire (WD-1/TT), insulators, a radio set, and a requirement to establish communications when standard antennas are unavailable.",
+    "standard": "Construct a functional antenna (such as a Half-Wave Dipole or Inverted Vee) that achieves resonance at the assigned frequency and enables communication.",
+    "performanceSteps": [
+      "Determine the required antenna type based on the mission and terrain.",
+      "Calculate the length of the wire elements for the assigned frequency.",
+      "Cut the wire to the calculated length, allowing for terminal connections.",
+      "Attach insulators to the ends and the center feed point.",
+      "Connect the transmission line (feed line) to the center point.",
+      "Erect the antenna using available supports (trees, poles, etc.).",
+      "Orient the antenna for maximum directivity toward the distant station."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Chapter 6, Page 6-7",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0044",
+    "title": "Perform Field Repair of Antennas",
+    "condition": "Given a damaged antenna (whip or wire) and a field repair kit.",
+    "standard": "Restore the electrical continuity and structural integrity of the antenna to allow for immediate resumption of communications.",
+    "performanceSteps": [
+      "Identify the point of failure or break in the antenna or transmission line.",
+      "Strip insulation from wire ends if repairing a wire antenna.",
+      "Splice the broken ends using a Western Union splice or similar secure connection.",
+      "Seal the connection with electrical tape or weatherproofing material.",
+      "Repair broken whip sections using a splint or emergency sleeve.",
+      "Test the antenna for electrical continuity and signal strength."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Chapter 6, Page 6-1",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0045",
+    "title": "Fabricate a Field-Expedient Ground Connection",
+    "condition": "Given a radio system requiring a ground, a pipe or conduit to serve as a ground rod, ground wire, ground clamp, cleaning materials (sandpaper or scraper), and tape.",
+    "standard": "To establish a low-resistance connection that supports radio wave radiation and prevents oxidation, ensuring the installation does not contaminate nearby drinking water supplies per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Identify a location for the ground rod away from nearby drinking water supplies.",
+      "Fabricate a ground rod from available pipe or conduit.",
+      "Clean the ground rod thoroughly by scraping and sandpapering at the point of connection.",
+      "Install a clean ground clamp onto the prepared section of the rod.",
+      "Solder or join the ground wire to the ground clamp.",
+      "Cover the joint with tape to prevent an increase in resistance due to oxidation."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 2-22",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0046",
+    "title": "Install an Antenna Counterpoise",
+    "condition": "Given an antenna system, wire, and insulators, in an environment where a direct ground connection is impractical due to high soil resistance.",
+    "standard": "To provide an artificial ground that produces the required radiation pattern, ensuring the counterpoise is insulated from the ground and sized correctly per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Determine the required size of the counterpoise (must be at least equal to or larger than the size of the antenna).",
+      "Erect the wire counterpoise a short distance above the ground.",
+      "Insulate the counterpoise from the ground using insulators.",
+      "Arrange the counterpoise in a simple geometric pattern if the antenna is mounted vertically.",
+      "Connect the counterpoise to the radio system ground terminal."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 2-22, 2-23",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0047",
+    "title": "Determine Antenna Polarization Requirements",
+    "condition": "Given a communication mission, a specified frequency band (LF, MF, HF, VHF, or UHF), and tactical antennas.",
+    "standard": "To optimize signal strength and radiation patterns based on frequency and transmission type (ground wave vs. sky wave) per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Identify the operating frequency band and transmission mode (ground wave or sky wave).",
+      "Select vertical polarization for medium and low frequency ground wave transmissions to minimize ground loss.",
+      "Select horizontal polarization for HF sky wave transmission to utilize high-angle radiation and directional properties.",
+      "Match the polarization of the transmitting and receiving antennas for VHF or UHF line-of-sight communications.",
+      "Employ circular polarization for satellite communications by combining equal magnitudes of vertical and horizontal waves with a 90-degree phase difference."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 2-8, 2-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0048",
+    "title": "Calculate Antenna Length",
+    "condition": "Given a specific operating frequency, a requirement for a half-wave or quarter-wave antenna, and reference material.",
+    "standard": "Calculate the physical length of the antenna wire to ensure resonance at the assigned frequency, in accordance with MCRP 3-40.3C Section III.",
+    "performanceSteps": [
+      "Identify the assigned operating frequency.",
+      "Determine the required antenna type (half-wave or quarter-wave).",
+      "Apply the standard formula for antenna length calculation (468/frequency for half-wave in feet).",
+      "Account for velocity factor and end effects if applicable.",
+      "Measure and cut the antenna wire to the calculated length."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 2-24",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0049",
+    "title": "Orient Antenna for Maximum Signal Strength",
+    "condition": "Given a tactical radio, an antenna system, and the location of a distant station.",
+    "standard": "Orient the antenna to achieve the highest possible signal-to-noise (S/N) ratio and proper polarization to establish a reliable communications circuit.",
+    "performanceSteps": [
+      "Determine the azimuth to the distant receiving station.",
+      "Identify the required polarization (vertical or horizontal) based on the frequency band and distance.",
+      "Align the antenna's radiation pattern toward the receiving station.",
+      "Adjust the take-off angle based on the required propagation path (Ground Wave vs. Sky Wave).",
+      "Verify signal strength and adjust orientation for maximum S/N ratio."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 2-26",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0050",
+    "title": "Install an Antenna Grounding System",
+    "condition": "Given a radio set, an antenna, and grounding materials (ground stakes, wire, or counterpoise kit).",
+    "standard": "Install a ground screen or counterpoise to improve antenna efficiency and radiation characteristics per MCRP 3-40.3C Section II.",
+    "performanceSteps": [
+      "Assess the Earth's electrical characteristics and conductivity at the site.",
+      "Select the appropriate grounding method (grounded antenna, counterpoise, or ground screen).",
+      "Drive ground stakes or lay out counterpoise radials in the required pattern.",
+      "Connect the grounding system to the radio's ground terminal.",
+      "Ensure all connections are tight and provide low resistance to the Earth."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 2-19",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0051",
+    "title": "Select Frequency Band for Propagation Path",
+    "condition": "Given a mission requirement, distance to the distant station, and Table 1-1 (Frequency Range Characteristics).",
+    "standard": "Select the appropriate frequency band (HF, VHF, or UHF) and propagation mode (Ground Wave or Sky Wave) to maintain a continuous link.",
+    "performanceSteps": [
+      "Determine the distance to the receiving station.",
+      "Analyze the terrain for Line of Sight (LOS) obstructions.",
+      "Select HF for long-range sky wave (100-8000 miles) or VHF/UHF for short-range LOS (0-50 miles).",
+      "Identify the Maximum Usable Frequency (MUF) for sky wave paths.",
+      "Select the frequency that provides the most direct path with minimal fading."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 1-4",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0052",
+    "title": "Configure Antenna for Near-Vertical Incidence Skywave (NVIS)",
+    "condition": "Given an HF radio set, a wire antenna, and a requirement to communicate within a skip zone.",
+    "standard": "Adjust the antenna height and configuration to achieve a high angle of incidence for NVIS propagation, ensuring signal return within the skip zone.",
+    "performanceSteps": [
+      "Identify the boundaries of the skip zone where ground wave is unusable.",
+      "Lower the antenna height to increase the angle of radiation (angle of incidence).",
+      "Select a frequency below the MUF that supports NVIS.",
+      "Orient the antenna to provide a broad, even signal pattern directly upward.",
+      "Establish communication with the station located within the skip zone."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 1-16",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0053",
+    "title": "Ground an Antenna System",
+    "condition": "Given a tactical radio, antenna, grounding stake, and mallet in a field environment.",
+    "standard": "To ensure maximum power radiation by minimizing ground resistance and preventing transmitter power dissipation as heat, ensuring the grounding stake is driven approximately one meter into the earth per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Identify the antenna feed point.",
+      "Select a location for the ground connection near the antenna base.",
+      "Drive the grounding stake approximately one meter into the earth to ensure average conductivity.",
+      "Connect the antenna ground lead to the grounding stake.",
+      "Verify the connection is secure to prevent power loss through heat dissipation."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 2-15",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0054",
+    "title": "Mitigate Manmade Noise Interference",
+    "condition": "Given a tactical radio system experiencing interference in an environment with manmade noise sources (e.g., power lines, vehicles, or electric motors).",
+    "standard": "To improve the signal-to-noise ratio by exploiting wave characteristics and physical placement to reject interfering signals per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Identify potential manmade noise sources in the immediate vicinity.",
+      "Reorient the receiving antenna to horizontal polarization to reduce reception of vertically polarized noise waves.",
+      "Relocate the receiving system at least one kilometer away from busy streets or highways if interference persists.",
+      "Utilize a narrowband antenna to reject strong interfering signals near the desired frequency.",
+      "Ensure the antenna and transmission line are balanced with respect to the ground to cancel noise voltages."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 1-25",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0055",
+    "title": "Construct an Artificial Ground (Counterpoise)",
+    "condition": "Given a vertical whip or monopole antenna, conductive material, and a tactical radio in an area with poor soil conductivity.",
+    "standard": "To provide an artificial ground that minimizes impedance and ensures maximum current flow for radiation per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Determine the requirement for an artificial ground based on soil conductivity and antenna performance.",
+      "Select appropriate conductive material for the counterpoise.",
+      "Connect the counterpoise to the antenna's ground terminal at the feed point.",
+      "Deploy the counterpoise radials or mesh to create a reflective ground plane.",
+      "Verify the antenna is resonated to ensure impedance is pure resistance."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 2-15",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0056",
+    "title": "Install Antenna Transmission Lines",
+    "condition": "Given a transceiver, antenna, transmission line, and necessary connectors/baluns.",
+    "standard": "To connect the transceiver to the antenna while minimizing energy loss and matching impedance per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Select the appropriate transmission line type for the frequency and equipment.",
+      "Inspect cable connectors for physical damage or debris.",
+      "Connect the transmission line to the transceiver output.",
+      "Connect the transmission line to the antenna feed point.",
+      "Install a balun if connecting an unbalanced transmission line to a balanced antenna.",
+      "Optimize line length to minimize attenuation and energy loss."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 3-1 to 3-11",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0057",
+    "title": "Employ an AS-2259/GR Antenna",
+    "condition": "Given an HF radio, AS-2259/GR antenna kit, and a mission requirement.",
+    "standard": "Assemble and orient the antenna to establish HF Near Vertical Incidence Skywave (NVIS) communications per MCRP 6-22D.",
+    "performanceSteps": [
+      "Inventory all AS-2259/GR antenna components.",
+      "Assemble the mast sections to the required height.",
+      "Attach the top cap and radiator elements.",
+      "Erect the mast assembly safely.",
+      "Secure the guy lines and ground stakes.",
+      "Connect the RF cable to the radio and the antenna base.",
+      "Verify signal strength and communication link."
+    ],
+    "sourceRef": "MCRP 6-22D, Page 4-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0058",
+    "title": "Employ an OE-254 Antenna",
+    "condition": "Given a VHF radio, OE-254 antenna kit, and a mission requirement.",
+    "standard": "Assemble and erect the antenna to establish VHF line-of-sight (LOS) communications per MCRP 6-22D.",
+    "performanceSteps": [
+      "Inventory all OE-254 antenna components.",
+      "Assemble the feedcone and radiator elements.",
+      "Connect the coaxial cable to the feedcone assembly.",
+      "Assemble mast sections and attach the antenna head.",
+      "Erect the mast to the vertical position.",
+      "Secure the mast using guy lines and stakes.",
+      "Route the coaxial cable to the radio equipment."
+    ],
+    "sourceRef": "MCRP 6-22D, Page 5-10",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0059",
+    "title": "Site an Antenna Farm",
+    "condition": "Given a tactical scenario, unit location, and CIS requirements.",
+    "standard": "Select a location for the antenna farm that accounts for tactical, technical, and doctrinal considerations per MCRP 6-22D.",
+    "performanceSteps": [
+      "Identify the type of command post (Main, Rear, or Tactical).",
+      "Evaluate terrain for Line of Sight (LOS) and NVIS requirements.",
+      "Analyze the site for potential interference (noise, multipath, or vegetated areas).",
+      "Determine the internal arrangement based on frequency bands and polarization.",
+      "Plan the layout for power and signal lines to minimize interference.",
+      "Ensure the site supports tactical requirements for concealment and security."
+    ],
+    "sourceRef": "MCRP 6-22D, Page 8-2",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0060",
+    "title": "Construct a Half-Wave Dipole Antenna",
+    "condition": "Given an HF radio, antenna wire, insulators, coaxial cable, and an assigned frequency.",
+    "standard": "Calculate the required length and construct the antenna to support HF communications at the assigned frequency per MCRP 6-22D.",
+    "performanceSteps": [
+      "Calculate the length of the antenna elements based on the assigned frequency.",
+      "Cut the antenna wire to the calculated dimensions.",
+      "Attach the center insulator and connect the feedline.",
+      "Attach end insulators to the radiator wires.",
+      "Deploy the antenna at the required height and orientation (horizontal or inverted vee).",
+      "Connect the feedline to the radio and verify the Standing Wave Ratio (SWR)."
+    ],
+    "sourceRef": "MCRP 6-22D, Page 4-14",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0061",
+    "title": "Establish Communications using Reflected Waves",
+    "condition": "Given a VHF/UHF radio and a scenario where direct Line of Sight (LOS) is obstructed by terrain or structures.",
+    "standard": "Direct antennas toward a reflecting object to achieve practical communications per MCRP 6-22D.",
+    "performanceSteps": [
+      "Identify a suitable reflecting structure (tall building, mountain, or water tower) visible to both stations.",
+      "Direct the transmitting antenna toward the point of maximum reflection.",
+      "Direct the receiving antenna toward the same reflecting point.",
+      "Adjust polarization (vertical or horizontal) to maximize signal strength.",
+      "Verify signal amplitude and phase to ensure constructive combination of waves."
+    ],
+    "sourceRef": "MCRP 6-22D, Page 1-20",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0062",
+    "title": "Select an HF Antenna for Sky Wave Propagation",
+    "condition": "Given a mission requirement, a circuit distance, time of day, and MCRP 3-40.3C.",
+    "standard": "Select an antenna that meets the required take-off angle and coverage requirements for the specified distance and time of day per Table 4-1.",
+    "performanceSteps": [
+      "Determine the circuit (range) distance.",
+      "Identify the required take-off angle based on time of day (Daytime vs Nighttime) using Table 4-1.",
+      "Determine the required coverage (omnidirectional, bidirectional, or directional) based on station locations.",
+      "Examine available construction materials and supports.",
+      "Evaluate the proposed antenna site for physical space constraints.",
+      "Select the specific antenna type that matches the propagation and site requirements."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 4-3",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0063",
+    "title": "Construct a Field Expedient Antenna",
+    "condition": "Given a radio set, assigned frequency, wire, insulators, supports, and MCRP 3-40.3C.",
+    "standard": "Construct the antenna to the calculated length for the assigned frequency, ensuring it is properly insulated and oriented to establish communication.",
+    "performanceSteps": [
+      "Determine the antenna type required (e.g., End-Fed Half-Wave or Center-Fed Doublet).",
+      "Calculate the physical length of the antenna wire based on the assigned frequency.",
+      "Cut the antenna wire to the calculated length.",
+      "Attach insulators to the antenna wire ends and feed point.",
+      "Connect the transmission line to the antenna.",
+      "Erect the antenna using available supports (masts or vegetation).",
+      "Ensure the antenna is not in close proximity to objects that cause detrimental scattering or re-radiation."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Pages 6-4 to 6-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0064",
+    "title": "Perform Field Repair of Antenna Components",
+    "condition": "Given a damaged antenna system (whip, wire, guys, or masts), repair materials, and MCRP 3-40.3C.",
+    "standard": "Restore the antenna system to an operational state ensuring electrical continuity and structural stability.",
+    "performanceSteps": [
+      "Identify the point of failure (whip, wire, guy, or mast).",
+      "Clean the contact points of the damaged components to ensure good electrical conductivity.",
+      "Splice or bridge broken wire or whip sections.",
+      "Repair or replace damaged guy lines to maintain structural tension.",
+      "Repair or reinforce damaged mast sections.",
+      "Verify the repair by checking for electrical continuity and signal reception."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 6-1",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0065",
+    "title": "Install Transmission Lines",
+    "condition": "Given a radio transmitter, an antenna, various transmission lines (coaxial or twin-lead), and MCRP 3-40.3C.",
+    "standard": "Select and install a transmission line that matches the impedance of the system and minimizes attenuation loss.",
+    "performanceSteps": [
+      "Identify the impedance of the transmitter and the antenna.",
+      "Select the largest diameter transmission line available that matches the system impedance.",
+      "Inspect the insulation material (dielectric) for suitability based on the operating frequency.",
+      "Route the transmission line to minimize length and avoid sharp bends.",
+      "Connect the transmission line to the antenna and transmitter ensuring tight, clean connections.",
+      "Protect the transmission line from environmental damage or interference."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 3-7",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0066",
+    "title": "Calculate Physical Length of a Field Expedient Antenna",
+    "condition": "Given an assigned frequency between 3 and 50 MHz, a calculator, and MCRP 3-40.3C.",
+    "standard": "Calculate the physical length of a half-wave or long-wire antenna in feet or meters to within +/- 1% accuracy of the formula results.",
+    "performanceSteps": [
+      "Identify the assigned operating frequency in MHz.",
+      "Determine the antenna type (Half-wave or Long-wire).",
+      "Select the appropriate formula for the unit of measure (Meters: 142.5 / Freq; Feet: 468 / Freq).",
+      "Apply the 0.95 correction factor for end effect/velocity reduction.",
+      "Calculate the total physical length for a half-wave antenna.",
+      "Calculate the length for a long-wire antenna using the harmonic operation formula [Length (m) = 150 (N - 0.05) / Freq] if required."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 2-25",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0067",
+    "title": "Construct a Field Expedient Ground",
+    "condition": "Given a tactical radio, antenna system, ground rods or bayonets, and soil treatment materials (salts/water).",
+    "standard": "Establish a ground connection that provides the maximum possible conductivity and least resistance to ground to support antenna radiation.",
+    "performanceSteps": [
+      "Identify the ground type required (rod, metal structure, or underground pipe).",
+      "Drive metal rods or bayonets into the soil to the maximum depth possible.",
+      "Connect ground leads to the grounding device ensuring a tight, metal-to-metal connection.",
+      "Assess soil conductivity based on moisture and soil type.",
+      "Treat soil with conductive substances (sodium chloride, calcium chloride, or magnesium sulfate) in solution if resistance is high.",
+      "Ensure the ground lead is as short as possible to minimize ground losses."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 2-21",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0068",
+    "title": "Construct a Center-Fed Doublet Antenna",
+    "condition": "Given a specific frequency, field wire (WD-1/TT), insulators, a transmission line, and MCRP 3-40.3C.",
+    "standard": "Construct and erect a center-fed doublet antenna cut to the correct physical length for the assigned frequency to enable HF communications.",
+    "performanceSteps": [
+      "Calculate the total physical length of the antenna for the assigned frequency.",
+      "Cut the wire into two equal halves (each a quarter-wavelength).",
+      "Attach a center insulator to join the two wire halves.",
+      "Connect the transmission line (e.g., 300-ohm twin lead or 50-ohm coax) to the center terminals.",
+      "Attach end insulators to both ends of the antenna wire.",
+      "Erect the antenna using masts or field expedients (trees/poles).",
+      "Adjust antenna height and orientation for optimal signal radiation."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 6-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0069",
+    "title": "Optimize Transmission Line Length",
+    "condition": "Given a transceiver with 50-ohm impedance, a transmission line with mismatched impedance, and a single operating frequency.",
+    "standard": "Cut the transmission line to a specific length to match the antenna impedance to the transmitter using standing wave repetitions.",
+    "performanceSteps": [
+      "Determine the impedance of the transceiver (typically 50 ohms).",
+      "Identify the impedance of the available transmission line.",
+      "Calculate the electrical half-wavelength for the operating frequency.",
+      "Cut the transmission line to a length that is an exact multiple of a half-wavelength to repeat the receiver impedance at the antenna.",
+      "For end-fed long-wire antennas, calculate and cut a quarter-wavelength matching section if required.",
+      "Connect the optimized line between the radio and the antenna."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 2-25",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0070",
+    "title": "Employ Reflected Waves for LOS Communication",
+    "condition": "Given a Line of Sight (LOS) path obstructed by terrain or structures, and directional antennas.",
+    "standard": "Orient antennas to exploit reflecting surfaces to achieve communication beyond normal LOS distances.",
+    "performanceSteps": [
+      "Identify a suitable reflecting surface (tall building, mountain, or water tower) visible to both stations.",
+      "Direct the transmitting antenna toward the point of maximum reflection on the object.",
+      "Direct the receiving antenna toward the same point of reflection.",
+      "Select vertical polarization to minimize phase difference between direct and reflected waves.",
+      "Adjust antenna aim to maximize signal strength (constructive interference)."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 1-20",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0071",
+    "title": "Calculate Antenna Length for a Specific Frequency",
+    "condition": "Given a target frequency, a calculator, and MCRP 3-40.3C.",
+    "standard": "Calculate the physical length of a half-wave dipole antenna in feet to within +/- 1 inch of the mathematical requirement based on the formula 468 / Frequency (MHz).",
+    "performanceSteps": [
+      "Identify the assigned operating frequency in Megahertz (MHz).",
+      "Select the appropriate formula for a half-wave dipole (468 / Frequency).",
+      "Divide 468 by the operating frequency to determine the total length in feet.",
+      "Divide the total length by two to determine the length of each individual element (leg).",
+      "Convert decimal feet to inches for precise measurement."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Section III, Page 2-24",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0072",
+    "title": "Construct a Half-Wave Dipole Antenna",
+    "condition": "Given a radio set, antenna wire, insulators, a transmission line (coaxial cable), and a measuring tape.",
+    "standard": "Construct the antenna to the calculated frequency length so that it is capable of radiating a signal at the assigned frequency with a proper impedance match.",
+    "performanceSteps": [
+      "Calculate the required length for the assigned frequency.",
+      "Measure and cut two equal lengths of antenna wire.",
+      "Attach the wire elements to a center insulator.",
+      "Connect the transmission line (coax) to the center insulator, ensuring the center conductor and shield are connected to opposite elements.",
+      "Attach end insulators to the extremities of the wire elements.",
+      "Secure the antenna to supports (trees or poles) at the required height and orientation."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Chapter 4, Page 4-14",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0073",
+    "title": "Employ an AS-2259/GR Antenna",
+    "condition": "Given an AS-2259/GR antenna kit, a radio set, and a designated site.",
+    "standard": "Erect the antenna to support Near Vertical Incidence Skywave (NVIS) communications, ensuring all mast sections are seated and guy wires are properly tensioned.",
+    "performanceSteps": [
+      "Inventory all components of the AS-2259/GR kit.",
+      "Assemble the mast sections by sliding them together.",
+      "Attach the top cap assembly and the four whip elements.",
+      "Connect the RF cable to the base of the antenna.",
+      "Raise the mast vertically while deploying the four radiating elements as guy wires.",
+      "Secure the radiating elements to the ground using stakes at 90-degree intervals.",
+      "Connect the antenna to the radio set and verify the communication link."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Chapter 4, Page 4-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0074",
+    "title": "Employ an OE-254 Antenna",
+    "condition": "Given an OE-254/GR antenna kit, a VHF radio set, and a designated site.",
+    "standard": "Assemble and erect the antenna to its full height (30 feet) to support VHF line-of-sight communications.",
+    "performanceSteps": [
+      "Layout the antenna components and inspect for damage.",
+      "Assemble the feedcone and attach the three upper and three lower radiating elements.",
+      "Attach the feedcone to the top mast section.",
+      "Connect the coaxial cable to the feedcone.",
+      "Assemble the mast sections while raising the antenna.",
+      "Deploy and secure the guy ropes at the 15-foot and 30-foot levels.",
+      "Ensure the mast is vertical and the base plate is stable.",
+      "Connect the cable to the radio and perform a radio check."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Chapter 5, Page 5-10",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0075",
+    "title": "Perform Field Repair of a Whip Antenna",
+    "condition": "Given a damaged or broken whip antenna and field expedient materials (wire, tape, splinting material).",
+    "standard": "Restore electrical continuity to the antenna to allow for emergency transmissions.",
+    "performanceSteps": [
+      "Identify the point of the break or damage.",
+      "Clean the area around the break to ensure good metal-to-metal contact.",
+      "Overlap the broken sections or use a conductive splint (e.g., a piece of wire or metal rod).",
+      "Secure the repair with tape or wire ties to maintain mechanical stability.",
+      "Verify electrical continuity using a multimeter or by observing a reduction in SWR (if equipment is available)."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Chapter 6, Page 6-1",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0076",
+    "title": "Construct a Field Expedient Vertical Half-Rhombic Antenna",
+    "condition": "Given antenna wire, a terminating resistor (approx. 500-600 ohms), an insulator, a mast or support, and a target azimuth.",
+    "standard": "Construct and orient the antenna toward the distant station to provide directional gain in the HF band.",
+    "performanceSteps": [
+      "Determine the azimuth to the distant station.",
+      "Calculate the length of the wire based on the desired frequency (typically 2 to 4 wavelengths).",
+      "Attach one end of the wire to the radio (feed point).",
+      "Run the wire to the top of a central support (mast) and through an insulator.",
+      "Slope the wire down toward the ground in the direction of the distant station.",
+      "Connect the end of the wire to a terminating resistor.",
+      "Connect the other side of the resistor to a ground stake.",
+      "Ensure the antenna is aligned within 5 degrees of the target azimuth."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Chapter 4, Page 4-37",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0077",
+    "title": "Orient Antenna for Polarization",
+    "condition": "Given a radio system, an antenna, and a requirement to establish communications with a distant station.",
+    "standard": "Orient the antenna to match the polarization of the electric field to achieve maximum signal pickup per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Determine the polarization of the transmitting station (vertical or horizontal).",
+      "For vertical polarization, orient the antenna elements at right angles to the Earth's surface.",
+      "For horizontal polarization, orient the antenna elements parallel to the Earth's surface.",
+      "Adjust orientation for maximum signal voltage (pickup) at the receiver.",
+      "Monitor for elliptical polarization if the field rotates through space, adjusting for both horizontal and vertical components."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 2-7",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0078",
+    "title": "Mitigate Manmade Noise Interference",
+    "condition": "Given a radio system experiencing interference from manmade sources such as power lines, vehicles, or electronic equipment.",
+    "standard": "Reduce interference to achieve a reliable signal-to-noise ratio that allows for clear communication per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Identify potential sources of manmade noise (e.g., automobile ignition, power lines, fluorescent lights).",
+      "Relocate the receiving system at least one kilometer away from the noise source if tactical situation permits.",
+      "Orient the receiving antenna for horizontal polarization to exploit the vertical polarization of noise waves near the source.",
+      "Balance the antenna and transmission line with respect to the ground to cancel noise voltages.",
+      "Utilize a narrowband antenna to reject strong interfering signals near the desired frequency.",
+      "Deactivate non-essential electronic equipment in the immediate vicinity."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 1-25",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0079",
+    "title": "Select Antenna Based on Frequency and Range",
+    "condition": "Given a mission requirement, an assigned frequency (HF, VHF, or UHF), and a specified range.",
+    "standard": "Select an antenna configuration that supports the assigned frequency band and range requirements per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Identify the assigned frequency band (HF, VHF, or UHF).",
+      "Select HF antennas for long-range communications requirements.",
+      "Select VHF or UHF antennas for line-of-sight (LOS) communications.",
+      "Select a 1.5 meter tuned whip antenna for frequencies below 1 MHz to deliver usable signals in high-noise environments.",
+      "Determine the required configuration (manpack, vehicle-mounted, or sheltered) based on mobility requirements."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Foreword and Page 1-25",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0080",
+    "title": "Select Antenna Polarization",
+    "condition": "Given a tactical radio, a frequency, and a mission requirement.",
+    "standard": "Select the correct polarization (vertical, horizontal, or circular) based on the frequency band and transmission mode (ground wave, sky wave, or SATCOM) to ensure a reliable communication net per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Identify the assigned frequency band (HF, VHF, or UHF).",
+      "Determine the transmission mode (Ground Wave, Sky Wave, or SATCOM).",
+      "Select vertical polarization for ground wave transmission at medium and low frequencies.",
+      "Select horizontal or vertical polarization for HF sky wave transmission (preferring horizontal for high-angle radiation).",
+      "Match polarization between transmitting and receiving antennas for VHF and UHF line-of-sight communications.",
+      "Select circular polarization for satellite communications (SATCOM).",
+      "Configure the antenna physically to match the selected polarization."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Pages 2-8 to 2-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0081",
+    "title": "Orient a Directional Antenna",
+    "condition": "Given a horizontal half-wave antenna, a distant station location, and a requirement to communicate.",
+    "standard": "Orient the antenna to maximize signal strength to the desired station and minimize interference from undesired stations per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Identify the azimuth to the receiving station.",
+      "Identify the location of any known interfering stations.",
+      "Deploy the horizontal half-wave antenna.",
+      "Orient the antenna broadside (perpendicular) to the desired receiving station for maximum signal strength.",
+      "Point the ends of the antenna toward interfering stations to minimize undesired signals.",
+      "Verify communication effectiveness with the distant station."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 2-11",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0082",
+    "title": "Establish an Antenna Ground",
+    "condition": "Given a grounded antenna system and grounding materials.",
+    "standard": "Establish a ground connection with the highest possible conductivity to reduce ground losses and provide a reflecting surface for radiated energy per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Identify the requirement for a grounded antenna based on frequency (low/medium).",
+      "Select a location with high ground conductivity.",
+      "Prepare the ground connection point to ensure minimum resistance.",
+      "Install the ground stake or grounding system.",
+      "Connect the antenna ground lead to the grounding system.",
+      "Ensure the connection is secure and free of debris."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 2-11",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0083",
+    "title": "Employ Tactical Single-Channel Radio (SCR) Antennas",
+    "condition": "Given a tactical radio, antenna components, and a mission requirement.",
+    "standard": "Select and employ the appropriate antenna to convert a marginal net into a reliable net by optimizing signal strength at the receiving station per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Determine the required range (short, medium, or long-range).",
+      "Select the appropriate frequency band (HF, VHF, or UHF).",
+      "Select the antenna configuration (hand-held, manpack, vehicle-mounted, or sheltered).",
+      "Account for environmental factors (terrain, dense forests, or atmospheric interference).",
+      "Coordinate timing, frequency, and equipment with the distant station.",
+      "Install the antenna according to the selected configuration."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Foreword and Page 2-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0084",
+    "title": "Select an Antenna for a Radio Communications Circuit",
+    "condition": "Given a mission requirement, a specific frequency band (HF, VHF, or UHF), and MCRP 3-40.3C.",
+    "standard": "To provide the strongest possible signal-to-noise (S/N) ratio at the receiving antenna by matching antenna characteristics to the required propagation path.",
+    "performanceSteps": [
+      "Identify the required frequency band (HF, VHF, or UHF) based on the communication equipment provided.",
+      "Determine the required range (Ground Wave vs. Sky Wave) for the mission.",
+      "Select an antenna compatible with the frequency range (HF: 2–29.999 MHz, VHF: 30–88 MHz or 116–150 MHz, UHF: 225–400 MHz).",
+      "Match the antenna type to the intended propagation path (Ground Wave for short range/LOS, Sky Wave for long range/HF).",
+      "Verify the antenna selection supports the required power output (0.5–5 kW for HF, <0.5 kW for VHF/UHF)."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Pages 1-4 to 1-7",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0085",
+    "title": "Establish a Radio Link",
+    "condition": "Given a transmitter, power supply (battery or generator), transmission lines, transmitting antenna, receiving antenna, and receiver.",
+    "standard": "To successfully generate, radiate, propagate, intercept, and demodulate a signal so that information is available in a useful form at the receiving station.",
+    "performanceSteps": [
+      "Connect the power supply to the transmitter to provide operating voltage.",
+      "Connect the transmission line from the transmitter to the transmitting antenna.",
+      "Configure the transmitter to generate a radio signal modulated with information (voice or data).",
+      "Radiate the electromagnetic wave via the transmitting antenna into the propagation path.",
+      "Intercept the wave using the receiving antenna.",
+      "Route the signal through the transmission line to the receiver.",
+      "Demodulate the energy at the receiver to retrieve the original information."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Pages 1-6 to 1-7",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0086",
+    "title": "Configure Radio Propagation Path",
+    "condition": "Given a tactical Single Channel Radio (SCR) and mission parameters.",
+    "standard": "To establish a communication path using either ground wave or sky wave propagation based on distance and frequency band requirements.",
+    "performanceSteps": [
+      "Determine the distance to the receiving station.",
+      "Select Ground Wave propagation for short-distance, UHF, or upper VHF transmissions.",
+      "Select Sky Wave propagation for long-distance transmissions (HF) requiring ionospheric refraction.",
+      "For VHF/UHF transmissions, ensure a direct Line of Sight (LOS) exists between the transmitter and receiver.",
+      "Adjust transmitter output power based on the propagation medium and band (HF, VHF, or UHF) as specified in Table 1-1.",
+      "Orient the antenna to maximize signal strength for the chosen propagation path."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Pages 1-4, 1-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0087",
+    "title": "Select a Site for an Antenna Farm",
+    "condition": "Given a tactical requirement, a designated area of operations, and MCRP 3-40.3C.",
+    "standard": "To ensure maximum signal propagation and minimize interference, accounting for tactical, technical, and doctrinal considerations per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Analyze doctrinal considerations based on Command Post type (Main, Tactical, or Rear).",
+      "Evaluate tactical considerations including cover, concealment, and security.",
+      "Assess technical considerations including grounding, interference, and physical obstructions.",
+      "Identify specific sites for VHF transmitting antennas.",
+      "Identify specific sites for VHF receiving antennas."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Chapter 8, Pages 8-1 to 8-11",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0088",
+    "title": "Select Radio Equipment based on Frequency Band",
+    "condition": "Given a communication requirement (Range and Environment) and MCRP 3-40.3C.",
+    "standard": "Select the appropriate frequency band and equipment to meet the range requirement (HF for 0-50 miles ground/100-8000 sky; VHF for 0-30 miles; UHF for 0-50 miles) per Table 1-1.",
+    "performanceSteps": [
+      "Determine the required communication range (Ground Wave vs Sky Wave).",
+      "Identify the appropriate frequency band (HF, VHF, or UHF) based on range and propagation characteristics.",
+      "Select the corresponding radio set (e.g., AN/PRC-104 for HF, AN/PRC-119 for VHF, AN/PRC-113 for UHF).",
+      "Verify Line of Sight (LOS) requirements for VHF and UHF bands.",
+      "Confirm power requirements for the selected band."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Chapter 1, Tables 1-1 and 1-2",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0089",
+    "title": "Arrange an Antenna Farm",
+    "condition": "Given multiple antennas, radio sets, and MCRP 3-40.3C.",
+    "standard": "Arrange the internal components of the antenna farm to ensure electromagnetic compatibility and signal integrity per the layout principles in MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Select antennas based on frequency band requirements.",
+      "Determine optimal placement for each antenna to minimize cosite interference.",
+      "Establish correct polarization (Vertical or Horizontal) for the circuit.",
+      "Route power and signal lines to prevent interference and tripping hazards.",
+      "Apply antenna farm layout principles to the physical site."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Chapter 8, Pages 8-12 to 8-16",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0090",
+    "title": "Employ an AS-2259/GR Antenna",
+    "condition": "Given an HF radio, AS-2259/GR antenna kit, and a requirement to establish Near Vertical Incidence Skywave (NVIS) communications.",
+    "standard": "Assemble and erect the antenna to establish communications in accordance with MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Inventory all antenna components for completeness.",
+      "Assemble the mast sections to the required height.",
+      "Attach the top cap and radiating elements.",
+      "Deploy guy wires and stakes at 90-degree intervals.",
+      "Connect the antenna feed line to the radio set.",
+      "Verify signal strength and adjust for NVIS optimization."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 4-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0091",
+    "title": "Construct a Field Expedient Half-Wave Dipole Antenna",
+    "condition": "Given a frequency, copper wire, insulators, feed line (coaxial or twin-lead), and support structures.",
+    "standard": "Construct and erect the antenna to achieve a functional communication link per the calculated frequency requirements in MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Calculate the length of the antenna using the formula (468 / frequency in MHz).",
+      "Cut the wire into two equal lengths for the dipole halves.",
+      "Attach the center insulator and end insulators.",
+      "Connect the feed line to the center insulator.",
+      "Hoist the antenna to the desired height using support structures.",
+      "Connect the feed line to the transmitter/receiver."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 4-14, 6-9",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0092",
+    "title": "Establish an Antenna Ground System",
+    "condition": "Given a radio system, ground rods, ground leads, and a site with low soil conductivity.",
+    "standard": "Install a ground connection that minimizes resistance to provide an effective reflecting surface per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Select a location for the ground rod near the antenna base.",
+      "Drive the ground rod (or expedient bayonet) into the soil.",
+      "Connect the ground lead from the equipment to the rod using a secure clamp.",
+      "Treat the soil with conductive substances (e.g., sodium chloride or magnesium sulfate) if resistance remains high.",
+      "Ensure the ground lead is as short and direct as possible."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 2-21",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0093",
+    "title": "Perform Field Repair of Wire Antennas",
+    "condition": "Given a damaged wire antenna, splicing materials, and hand tools.",
+    "standard": "Restore the electrical continuity of the antenna to support mission requirements per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Identify the break or point of damage in the antenna wire.",
+      "Strip the insulation from the ends of the broken wire.",
+      "Splice the wires together using a secure mechanical connection (e.g., Western Union splice).",
+      "Seal the connection to prevent corrosion or further damage.",
+      "Re-tension the antenna wire and verify continuity."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 6-2",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0094",
+    "title": "Integrate a Balun into an Antenna System",
+    "condition": "Given a balanced antenna, an unbalanced transmitter output, and a balun (balanced-to-unbalanced transformer).",
+    "standard": "Install the balun to transform energy between balanced and unbalanced circuits to reduce noise and improve signal quality per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Determine the placement of the balun (at the antenna terminals or the transmitter).",
+      "Connect the balanced antenna leads to the balanced side of the balun.",
+      "Connect the coaxial transmission line to the unbalanced side of the balun.",
+      "Secure all connections and weather-proof if located at the antenna.",
+      "Verify the reduction of manmade noise or interference in the system."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 3-11",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0095",
+    "title": "Determine Antenna Polarization Requirements",
+    "condition": "Given a mission requirement, a tactical radio, and a specific frequency band (LF, MF, HF, VHF, or UHF).",
+    "standard": "To ensure the transmitting and receiving antennas are oriented to provide the strongest possible signal and minimize loss per MCRP 6-22D.",
+    "performanceSteps": [
+      "Identify the operating frequency band (LF, MF, HF, VHF, or UHF).",
+      "Determine the propagation mode (Ground Wave or Sky Wave).",
+      "Select vertical polarization for LF or MF ground wave transmissions to prevent shorting out horizontal lines of force.",
+      "Select horizontal or vertical polarization for HF sky wave transmissions based on directional requirements.",
+      "Match polarization (horizontal-to-horizontal or vertical-to-vertical) for VHF and UHF line-of-sight transmissions.",
+      "Orient the antenna to maintain the original polarization produced at the transmitting station."
+    ],
+    "sourceRef": "MCRP 6-22D, Page 2-8",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0096",
+    "title": "Analyze Ionospheric Effects on Communications",
+    "condition": "Given a High Frequency (HF) radio net and observed signal degradation or loss.",
+    "standard": "Identify the specific ionospheric variation affecting the circuit and determine the impact on the communication link per MCRP 6-22D.",
+    "performanceSteps": [
+      "Monitor for Sudden Ionospheric Disturbance (SID) indicated by total absorption of frequencies above 1 MHz during daylight hours.",
+      "Identify Ionospheric Storms characterized by rapid blasting and fading (flutter fading) above 1.5 MHz.",
+      "Detect Sporadic E effects causing unexpected long-range propagation or blanking of higher layer reflections.",
+      "Assess sunspot activity levels to determine usability of frequencies above 20 MHz.",
+      "Adjust operating frequencies or transmission times to compensate for regular and irregular ionospheric variations."
+    ],
+    "sourceRef": "MCRP 6-22D, Page 1-14 to 1-15",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0097",
+    "title": "Establish Sky Wave Transmission Paths",
+    "condition": "Given a tactical radio, an antenna, and a requirement for long-distance communication.",
+    "standard": "Determine the necessary frequency and angle of incidence to ensure the signal reflects off the ionosphere to the target skip distance per MCRP 6-22D.",
+    "performanceSteps": [
+      "Determine the ionization density of the target ionospheric layer (E or F).",
+      "Identify the critical frequency for the ionized layer.",
+      "Select an operating frequency below the critical frequency for vertical transmissions or adjust the angle of incidence for higher frequencies.",
+      "Calculate the critical angle to ensure the radio wave is reflected back to Earth rather than passing into space.",
+      "Adjust the antenna angle of transmission to meet the required skip distance for the receiving station."
+    ],
+    "sourceRef": "MCRP 6-22D, Page 1-15",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0098",
+    "title": "Determine Operating Frequency for Sky Wave Propagation",
+    "condition": "Given a mission requirement, a high frequency (HF) radio, and current ionospheric conditions.",
+    "standard": "Select a frequency that is below the critical frequency and above the absorption level of the D-layer to ensure reflection back to Earth, in accordance with MCRP 6-22D.",
+    "performanceSteps": [
+      "Analyze ionospheric layers (D, E, F) based on time of day and solar activity.",
+      "Identify the critical frequency for the current ionization density.",
+      "Select an operating frequency below the critical frequency for the intended path.",
+      "Adjust frequency selection based on sunspot activity levels to ensure reflection.",
+      "Monitor for Sudden Ionospheric Disturbances (SID) that may require frequency shifts."
+    ],
+    "sourceRef": "MCRP 6-22D, Pages 1-14 to 1-15",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0099",
+    "title": "Adjust Antenna Height for Signal Coverage",
+    "condition": "Given a tactical radio, a field-expedient or standard antenna, and a specified communication range requirement.",
+    "standard": "Adjust the antenna height to control the angle of incidence to either achieve Near-Vertical Incidence Skywave (NVIS) for short-range or low-angle radiation for long-range, ensuring the skip zone does not interfere with the target area.",
+    "performanceSteps": [
+      "Determine the required communication range (short-range vs. long-distance).",
+      "Identify the desired angle of incidence for the signal path.",
+      "Lower antenna height to increase the angle of transmission for broad, even signal patterns (NVIS).",
+      "Raise antenna height to lower the angle of incidence for long-distance communication paths.",
+      "Verify the absence of an undesirable skip zone between the ground wave and the first sky wave return point."
+    ],
+    "sourceRef": "MCRP 6-22D, Page 1-16",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0100",
+    "title": "Troubleshoot HF Signal Degradation",
+    "condition": "Operating an HF radio net and experiencing irregular signal variations or fading.",
+    "standard": "Identify the cause of signal degradation and apply appropriate frequency or antenna management techniques to maintain the communication link.",
+    "performanceSteps": [
+      "Monitor the receiver for signs of signal degradation (e.g., flutter fading, total absorption).",
+      "Differentiate between regular variations and irregular variations (Sporadic E, SID, or Ionospheric Storms).",
+      "Identify Sudden Ionospheric Disturbances (SID) by checking for total absorption above 1 MHz during daylight hours.",
+      "Identify Ionospheric Storms by the presence of rapid blasting and fading (flutter fading).",
+      "Adjust operating frequency or transmission hops to compensate for atmospheric interference.",
+      "Report ionospheric status to the Net Control Station (NCS) if communications are blanked out."
+    ],
+    "sourceRef": "MCRP 6-22D, Pages 1-14 to 1-16",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0101",
+    "title": "Orient a Directional Antenna using a Magnetic Compass",
+    "condition": "Given a directional antenna, a magnetic compass, a map of magnetic declination, and a target azimuth for the radio path.",
+    "standard": "Align the antenna to the true azimuth of the radio path within +/- 10 degrees (or as specified by the antenna's beamwidth) to ensure maximum signal strength and minimize radiation pattern error.",
+    "performanceSteps": [
+      "Determine the azimuth of the radio path.",
+      "Consult the magnetic declination map to identify the variation of the compass needle from true north for the current location.",
+      "Adjust the compass reading to account for magnetic declination to determine true north.",
+      "Align the antenna's primary radiation lobe along the calculated true azimuth.",
+      "Erect the antenna securely to maintain the correct azimuth."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 2-27",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0102",
+    "title": "Troubleshoot Marginal Communications",
+    "condition": "Given a radio circuit experiencing marginal signal quality, necessary tools (tape, wrenches), and operational equipment.",
+    "standard": "Improve communication quality by performing systematic technical adjustments until signal strength is optimized or restored to operational standards.",
+    "performanceSteps": [
+      "Check, tighten, and tape all cable couplings and connections.",
+      "Retune all transmitters and receivers in the circuit.",
+      "Verify that the antennas are adjusted for the proper operating frequency.",
+      "Adjust the heights of the antennas to improve signal path.",
+      "Relocate the antenna a short distance away from its original location to find a better signal spot.",
+      "Separate transmitters from receiving equipment if feasible to reduce interference."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 3-4",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0103",
+    "title": "Match Impedance by Optimizing Transmission Line Length",
+    "condition": "Given a transceiver (50-ohm internal impedance), a transmission line with mismatched impedance, a load antenna, and a single operating frequency.",
+    "standard": "Cut the transmission line to a specific length (half-wavelength or quarter-wavelength) to achieve maximum energy transfer and minimize reflected energy.",
+    "performanceSteps": [
+      "Identify the impedance of the transceiver, transmission line, and antenna.",
+      "Determine the operating frequency for the circuit.",
+      "Calculate the physical length of a half-wavelength or quarter-wavelength for the specific frequency.",
+      "Cut the transmission line to the calculated length (or a multiple of half-wavelengths) to repeat the receiver impedance at the antenna connection.",
+      "For end-fed long-wire antennas, cut the wire to include a quarter-wavelength section to serve as the matching transmission line.",
+      "Connect the optimized line to the transmitter and antenna and verify the match."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 3-5",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0104",
+    "title": "Establish a Radio Communications Circuit",
+    "condition": "Given a tactical Single Channel Radio (SCR), power supply, transmission lines, antennas, and a distant station.",
+    "standard": "Establish a radio link that provides the greatest signal-to-noise (S/N) ratio at the receiving antenna, ensuring information is available in a useful form per MCRP 3-40.3C.",
+    "performanceSteps": [
+      "Generate and radiate an electromagnetic wave modulated with information (e.g., voice, Morse code).",
+      "Propagate the wave efficiently from the transmitting antenna to the receiving antenna by matching antenna characteristics to the propagation path.",
+      "Intercept the wave by using a receiving antenna.",
+      "Demodulate the energy so that the information originally transmitted becomes available in a useful form."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Page 1-6",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0105",
+    "title": "Select Frequency Band for Tactical Communications",
+    "condition": "Given a mission requirement with specific range and terrain constraints.",
+    "standard": "Select the frequency band (HF, VHF, or UHF) and corresponding equipment that meets range requirements and accounts for Line of Sight (LOS) obstructions per Table 1-1 and 1-2.",
+    "performanceSteps": [
+      "Determine the required range for the communication link (Ground Wave vs. Sky Wave).",
+      "Assess Line of Sight (LOS) requirements and identify massive obstructions for VHF/UHF paths.",
+      "Select HF for long-range communications (100–8000 miles sky wave).",
+      "Select VHF for short-range communications (0–30 miles ground wave) when LOS is available.",
+      "Select UHF for critical LOS (ground to air) or SATCOM requirements.",
+      "Identify the appropriate MAGTF SCR equipment for the selected band (e.g., AN/PRC-104 for HF, AN/PRC-119 for VHF, or AN/PSC-5 for UHF SATCOM)."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Pages 1-4 to 1-5",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0106",
+    "title": "Account for Ground Wave Propagation Factors",
+    "condition": "Operating a radio circuit using ground wave propagation over varying terrain.",
+    "standard": "Adjust frequency and antenna height to overcome surface absorption and Earth's curvature to maintain the radio link.",
+    "performanceSteps": [
+      "Identify the Earth's surface conductivity for the transmission path (e.g., Ocean, Loamy Soil, or Jungle).",
+      "Select lower frequencies (below 10 MHz) to utilize the surface wave component when conductivity is high.",
+      "Increase transmitting or receiving antenna height to extend the Direct Wave Line of Sight (LOS) distance.",
+      "Monitor for signal cancellation caused by ground reflected waves arriving 180 degrees out of phase.",
+      "Adjust transmitter power output to compensate for signal absorption in poor conductivity environments like desert or jungle."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Pages 1-9 to 1-11",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0107",
+    "title": "Utilize Sky Wave Propagation",
+    "condition": "Given a requirement for long-distance communications beyond the horizon.",
+    "standard": "Establish a communication path using ionospheric refraction to bridge distances between 50 and 8000 miles.",
+    "performanceSteps": [
+      "Select a frequency within the HF (2–29.999 MHz) or VHF (30–88 MHz) band suitable for sky wave refraction.",
+      "Identify the current ionospheric layers (D, E, F1, F2) based on time of day.",
+      "Account for the merging of F1 and F2 layers into a single F layer at night.",
+      "Account for the fading of D and E layers during night operations.",
+      "Orient the antenna to direct the signal toward the ionosphere for refraction back to Earth."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Pages 1-9 to 1-11",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0108",
+    "title": "Select Radio Frequency Band based on Mission Requirements",
+    "condition": "Given a mission requirement specifying range and environment, and MCRP 6-22D (Antenna Handbook).",
+    "standard": "Select the appropriate frequency band (HF, VHF, or UHF) to meet the range and propagation requirements as defined in Table 1-1 and Table 1-2 of the reference.",
+    "performanceSteps": [
+      "Identify the required communication range (Ground Wave vs. Sky Wave).",
+      "Determine if Line of Sight (LOS) is achievable for the terrain.",
+      "Select the High Frequency (HF) band for long-range (100-8000 miles) sky wave or 0-50 miles ground wave.",
+      "Select the Very High Frequency (VHF) band for short-range (0-30 miles) LOS communications.",
+      "Select the Ultrahigh Frequency (UHF) band for critical LOS (ground-to-air) or SATCOM requirements.",
+      "Identify the specific Single Channel Radio (SCR) equipment required for the selected band."
+    ],
+    "sourceRef": "MCRP 6-22D, Pages 1-4 to 1-5",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0109",
+    "title": "Configure Antenna for Near-Vertical Incidence Skywave (NVIS) Propagation",
+    "condition": "Given an HF radio system, antenna components, and a requirement for short-range skywave communication (avoiding a skip zone).",
+    "standard": "Adjust antenna height to increase the angle of incidence, providing broad signal coverage in a large area without a skip zone, in accordance with MCRP 6-22D.",
+    "performanceSteps": [
+      "Determine the desired coverage area and operating frequency.",
+      "Calculate the appropriate antenna height relative to the operating frequency.",
+      "Lower the antenna height to increase the angle of transmission (Angle of Incidence).",
+      "Verify the elimination of the skip zone (the area between ground wave and sky wave return).",
+      "Establish communication with the receiving station using the NVIS path."
+    ],
+    "sourceRef": "MCRP 6-22D, Page 1-16",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0110",
+    "title": "Identify Components of a Radio Communication Link",
+    "condition": "Given a tactical radio system and MCRP 6-22D.",
+    "standard": "Identify all seven discrete components of a radio link to ensure system integrity and troubleshooting capability.",
+    "performanceSteps": [
+      "Identify the Transmitter.",
+      "Identify the Power Supply.",
+      "Identify the Transmission Lines.",
+      "Identify the Transmitting Antenna.",
+      "Identify the Propagation Path.",
+      "Identify the Receiving Antenna.",
+      "Identify the Receiver."
+    ],
+    "sourceRef": "MCRP 6-22D, Page 1-5",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0111",
+    "title": "Mitigate Signal Fading in HF Communications",
+    "condition": "Given an HF radio circuit experiencing periodic fluctuations in received signal strength.",
+    "standard": "Implement mitigation techniques to maintain a reliable receiving signal above the background noise level without relying solely on increased transmitter power.",
+    "performanceSteps": [
+      "Monitor the received signal for periodic increases and decreases in strength.",
+      "Analyze the signal-to-noise ratio to determine if the fade is below background noise.",
+      "Select the correct operating frequency based on atmospheric conditions (MUF/LUF).",
+      "Adjust antenna gain or orientation to optimize signal reception.",
+      "Verify circuit reliability and signal strength at the receiving station."
+    ],
+    "sourceRef": "MCRP 6-22D, Pages 1-16 to 1-17",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0112",
+    "title": "Select an Antenna for Single-Channel Radio (SCR) Operations",
+    "condition": "Given a mission requirement, a tactical radio, and MCRP 3-40.3C.",
+    "standard": "To provide the strongest possible signal at the receiving station of the circuit based on the military radio frequency band (HF, VHF, or UHF) and operational environment.",
+    "performanceSteps": [
+      "Identify the required military radio frequency band (HF, VHF, or UHF).",
+      "Determine the required range and mode of operation (simplex or half-duplex).",
+      "Account for environmental factors including terrain and atmospheric interference.",
+      "Select the antenna configuration (hand-held, manpack, vehicle-mounted, bench-mounted, or sheltered) that optimizes signal strength."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Foreword",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0113",
+    "title": "Employ Single-Channel Radio (SCR) Jam Resistance and COMSEC",
+    "condition": "Given a tactical radio, common timing, frequency data, and mission requirements.",
+    "standard": "To establish secure voice communication and jam resistance through frequency hopping while minimizing susceptibility to enemy electronic warfare.",
+    "performanceSteps": [
+      "Ensure common timing is established between stations.",
+      "Verify common frequency and equipment compatibility.",
+      "Enable integrated communications security (COMSEC) for secure voice and data exchange.",
+      "Activate frequency hopping mode to provide jam resistance."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Foreword",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  },
+  {
+    "id": "0621-ANT-0114",
+    "title": "Employ SCR Satellite Communications (SATCOM)",
+    "condition": "Given a tactical radio with SATCOM capability and limited spectrum availability.",
+    "standard": "To provide mobile, flexible communications with unlimited range while coordinating for limited spectrum availability.",
+    "performanceSteps": [
+      "Coordinate for spectrum availability and frequency assignment.",
+      "Configure the SCR equipment for SATCOM mode.",
+      "Establish communication link to provide mobility and flexibility in the MAGTF CIS architecture.",
+      "Monitor the link for interference or footprint limitations."
+    ],
+    "sourceRef": "MCRP 3-40.3C, Foreword",
+    "validation": {
+      "valid": true,
+      "errors": [],
+      "warnings": []
+    }
+  }
+]
