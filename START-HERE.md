@@ -47,7 +47,7 @@ Either way, start with section 3. It costs nothing and requires no installation.
    - *Behavior:* "Classify each frequency into the correct military radio frequency band (HF, VHF, or UHF)."
    - *Standard:* "Without error per Figure 1-1 of MCRP 3-40.3C."
    That three-part shape is called Mager format, and the verb "classify" was chosen deliberately from an approved list. Under it are `ELO-001` and `ELO-002`, the two smaller skills that add up to the TLO.
-5. Click the **Quiz** tab and find `Q-001`. It tests `ELO-001` specifically, cites the figure in the manual, and explains the right answer.
+5. Click the **Quiz** tab and read **Question 1**, which asks for the HF band's frequency limits. It tests `ELO-001` specifically. Click **Show Answers** to see the correct choice, the explanation, and the figure in the manual it came from.
 6. Click **WIIFM** to see the instructor talking points for the same lesson.
 7. Now open `output-v2/notebooklm/`. The lesson content for `TLO-001` was pasted into Google NotebookLM, which produced `lesson1-slides.pdf` and `lesson1-video.mp4` with no further human authoring. Watch the video. That is a manual page becoming a narrated lesson with a chain of traceable steps in between.
 
